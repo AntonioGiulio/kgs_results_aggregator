@@ -1,57 +1,71 @@
+/*
+– – – – – – – – – – – – – – – – – – – – – – – – – – – – – 
+Title :  Knowledge Graphs results aggregator
+Author : Antonio Giulio
+URL : https://github.com/AntonioGiulio/kgs_results_aggregator
+Description : TThis module is capable of aggregating the results
+             deriving from the lodcloud-querier and datahub-querier npm modules,
+             standardizes the JSON format and applies different types of ranking.
+Created : August 26 2021
+version : 0.1.0
+– – – – – – – – – – – – – – – – – – – – – – – – – – – – – 
+*/
+
+// npm module able to retrieve knowledge graphs from Lod-Cloud
 const lodcloud_querier = require('lodcloud-querier');
+// npm module able to retrieve knowledge graphs from DataHub
 const datahub_querier = require('datahub-querier');
+// npm module required to create graphs
 const graphBuilder = require('ngraph.graph');
+// npm module required to compute pagerank on a graph
 const pagerank = require('ngraph.pagerank');
+// npm module required to compute centrality on a graph
 const centrality = require('ngraph.centrality');
-const fs = require('fs');
+
+//const fs = require('fs');
 
 class KGs_Results_Aggregator {
     
+    // initialize lc & dh quereirs
     constructor() {
         this.lc_querier = new lodcloud_querier();
         this.dh_querier = new datahub_querier();
     }
-
-
     
-    //PARALLEL
+    /*
+    * Summary: For each knowledge graph retrieved from the brutalSearch on th other libraries, it 
+                merges and standardize results;
+    * Parameters: target (string) keyword to search, rankingMode (string) enable one of ranking modes.
+    * Return: JSONArray containing the ordered, standardized & merged results.
+    */
     brutalSearch(target){
 
+        // all results are standardized
         var lc_results = lcToStandard(this.lc_querier.brutalSearch(target));
         var dh_results = dhToStandard(this.dh_querier.brutalSearch(target));
 
         var mergedResults = JSON.parse('[]');
         var i = 0;
         
-        //adesso dobbiamo mergiarli in maniera che non ci siano doppi
-        
-        //creo un grafo con gli id dei risultati da DataHub
+        // we create a graph with the ids of the results from DataHub
         var dh_graph = graphBuilder();
         for(var kg in dh_results){
             dh_graph.addNode(dh_results[kg]['id']);
         }
-        
-        /*
-        //stampiamo tutti i nodi 
-        dh_graph.forEachNode(function(node){
-            console.log(node.id);
-        });*/
 
-        //inizia la fase di confronto vera e propria
+        // matching phase begins
         for(var kg in lc_results){
-            //se nell'insieme dei risultati di dh non è presente il risultato corrente di lod cloud lo aggiungo ai risultati finali, tutti gli altri saranno già parte dei risultati di DataHub
             if(dh_graph.getNode(lc_results[kg]['id']) == null){
                 mergedResults[i++] = lc_results[kg];
             }
         }
 
-        //aggiungo anche tutti i risultati di dh hub;
+        // later we also add all the results from datahub
         for(var kg in dh_results){
             mergedResults[i++] = dh_results[kg];
         }      
         
         /*
-        //temporaneo per analizzare i risultati, andrà eliminato 
         fs.writeFile("first_approach.json", JSON.stringify(mergedResults, null, 2), function(err) {
             if(err) {
                 return console.log(err);
@@ -59,13 +73,16 @@ class KGs_Results_Aggregator {
             console.log("The file was saved!");
         }); */
         
-
-
-        // @@@@@ dobbiamo fare qualcosa riguardo l'ordinamento; che è andato un po' a puttane 
+        // we sort the results before returning
         return this.generalSorting(mergedResults, arguments[1]);
     }
 
-
+    /*
+    * Summary: It uses the brutalSearch method and then acts as a filter
+                 and searches for the keyword only within the specified tags.
+    * Parameters: target (string) keyword to search, tags (string[]) tags to inspect, rankingMode (string) enable one of ranking modes.
+    * Return: JSONArray containing the ordered, standardized & merged results.
+    */
     multiTagSearch(target, ...tags){
         var brutalResults = this.brutalSearch(target, arguments[arguments.length-1]);
         var results = JSON.parse('[]');
@@ -93,6 +110,12 @@ class KGs_Results_Aggregator {
         return results;
     }
 
+
+    /*
+    * Summary: It's a dispatcher method to execute the ranking algorithm specified in mode parameter.
+    * Parameters: results (JSONArray) generated in a previous request, mode (string) ranking mode.
+    * Return: JSONArray containing the ordered results.
+    */
     generalSorting(results, mode){
         switch(mode){
             case 'size':
@@ -116,6 +139,11 @@ class KGs_Results_Aggregator {
         }
     }
 
+    /*
+    * Summary: Sorts results by triples number.
+    * Parameters: results (JSONArray) generated in a previous request.
+    * Return: JSONArray containing the ordered results.
+    */
     sortResultsBySize(results){
         console.log('size ranking');
         results.sort(function(a, b){ return b.triples - a.triples});
@@ -123,6 +151,11 @@ class KGs_Results_Aggregator {
         return results;
     }
 
+    /*
+    * Summary: Sorts results in alphabetic order using the name(id).
+    * Parameters: results (JSONArray) generated in a previous request.
+    * Return: JSONArray containing the ordered results.
+    */
     sortResultsByName(results){
         console.log('alphabetuc ranking');
         results.sort(function(a, b){
@@ -136,6 +169,11 @@ class KGs_Results_Aggregator {
         return results;
     }
 
+    /*
+    * Summary: Sorts results by authority using the pagerank algorithm
+    * Parameters: results (JSONArray) generated in a previous request.
+    * Return: JSONArray containing the ordered results.
+    */
     sortResultsByAuthority(results){
         console.log('authority ranking');
         var resultGraph = createGraph(results);
@@ -147,6 +185,11 @@ class KGs_Results_Aggregator {
         return results;
     }
 
+    /*
+    * Summary: Sorts results by centrality using the centrality algorithm
+    * Parameters: results (JSONArray) generated in a previous request.
+    * Return: JSONArray containing the ordered results.
+    */
     sortResultsByCentrality(results){
         console.log('centrality ranking');
         var resultGraph = createGraph(results);
@@ -158,6 +201,11 @@ class KGs_Results_Aggregator {
         return results;
     }
 
+    /*
+    * Summary: It's a filter to return in the resulting JSON only tags specified.
+    * Parameters: results (JSONArray) generated in a previous request, tags (string[]) tag to filter in.
+    * Return: JSONArray containing the filtered results.
+    */
     filterRersults(results, ...tags){
         var filteredResults = JSON.parse('[]');
         var z = 0;
@@ -175,6 +223,11 @@ class KGs_Results_Aggregator {
    
 }
 
+/*
+* Summary: It's an external function that create a graph from results.
+* Parameters: raw (JSONArray) generated in a previous request.
+* Return: graph.
+*/
 function createGraph(raw){
     var graph = graphBuilder();
     for(d in raw){
@@ -261,12 +314,4 @@ function dhToStandard(datasets) {
     return standardized;
 }
 
-const aggregator = new KGs_Results_Aggregator();
-
-//temporaneo per analizzare i risultati, andrà eliminato 
-fs.writeFile("first_approach.json", JSON.stringify(aggregator.filterRersults(aggregator.multiTagSearch('museum', 'id', 'title', 'centrality'), 'id', 'title'), null, 2), function(err) {
-    if(err) {
-        return console.log(err);
-    }
-    console.log("The file was saved!");
-}); 
+module.exports = KGs_Results_Aggregator;

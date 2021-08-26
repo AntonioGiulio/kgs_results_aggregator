@@ -1,9 +1,13 @@
 {
+  "main": "index.js",
+  "name": "kgs_results_aggregator",
+  "version": "0.1.1",
+  "homepage": "https://github.com/AntonioGiulio/kgs_results_aggregator",
   "dependencies": {
     "datahub-querier": "^0.1.1",
     "lodcloud-querier": "^0.1.1",
     "ngraph.graph": "^19.1.0",
-    "performance": "^1.4.0",
-    "run-parallel": "^1.2.0"
+    "ngraph.pagerank": "^2.0.0",
+    "ngraph.centrality": "^2.0.1"
   }
 }
