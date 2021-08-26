@@ -1,6 +1,8 @@
 const lodcloud_querier = require('lodcloud-querier');
 const datahub_querier = require('datahub-querier');
 const graphBuilder = require('ngraph.graph');
+const pagerank = require('ngraph.pagerank');
+const centrality = require('ngraph.centrality');
 const fs = require('fs');
 
 class KGs_Results_Aggregator {
@@ -15,8 +17,8 @@ class KGs_Results_Aggregator {
     //PARALLEL
     brutalSearch(target){
 
-        var lc_results = lcToStandard(this.lc_querier.brutalSearch(target, arguments[1]));
-        var dh_results = dhToStandard(this.dh_querier.brutalSearch(target, arguments[1]));
+        var lc_results = lcToStandard(this.lc_querier.brutalSearch(target));
+        var dh_results = dhToStandard(this.dh_querier.brutalSearch(target));
 
         var mergedResults = JSON.parse('[]');
         var i = 0;
@@ -55,17 +57,17 @@ class KGs_Results_Aggregator {
                 return console.log(err);
             }
             console.log("The file was saved!");
-        }); 
-        */
+        }); */
+        
 
 
         // @@@@@ dobbiamo fare qualcosa riguardo l'ordinamento; che è andato un po' a puttane 
-        return mergedResults;        
+        return this.generalSorting(mergedResults, arguments[1]);
     }
 
 
     multiTagSearch(target, ...tags){
-        var brutalResults = this.brutalSearch(target);
+        var brutalResults = this.brutalSearch(target, arguments[arguments.length-1]);
         var results = JSON.parse('[]');
 
         var field, i = 0;
@@ -86,12 +88,108 @@ class KGs_Results_Aggregator {
                 return console.log(err);
             }
             console.log("The file was saved!");
-          }); 
-            */
+          }); */
+            
         return results;
     }
 
+    generalSorting(results, mode){
+        switch(mode){
+            case 'size':
+                return this.sortResultsBySize(results);
+                break;
+
+            case 'name':
+                return this.sortResultsByName(results)                ;
+                break;
+
+            case 'authority':
+                return this.sortResultsByAuthority(results)                ;
+                break;
+
+            case 'centrality':
+                return this.sortResultsByCentrality(results);
+                break;
+
+            default:
+                return this.sortResultsByName(results);                
+        }
+    }
+
+    sortResultsBySize(results){
+        console.log('size ranking');
+        results.sort(function(a, b){ return b.triples - a.triples});
+
+        return results;
+    }
+
+    sortResultsByName(results){
+        console.log('alphabetuc ranking');
+        results.sort(function(a, b){
+            var x = a.id.toLowerCase();
+            var y = b.id.toLowerCase();
+            if(x < y) {return -1;}
+            if(x > y) {return 1;}
+            return 0;
+        });
+
+        return results;
+    }
+
+    sortResultsByAuthority(results){
+        console.log('authority ranking');
+        var resultGraph = createGraph(results);
+        var rank = pagerank(resultGraph);
+        console.log(rank);
+
+        results.sort(function(a, b) {return rank[b.id] - rank[a.id]});
+
+        return results;
+    }
+
+    sortResultsByCentrality(results){
+        console.log('centrality ranking');
+        var resultGraph = createGraph(results);
+        var rank = centrality.degree(resultGraph);
+        console.log(rank);
+
+        results.sort(function(a, b) {return rank[b.id] - rank[a.id]});
+
+        return results;
+    }
+
+    filterRersults(results, ...tags){
+        var filteredResults = JSON.parse('[]');
+        var z = 0;
+        console.log('Output tags: ', tags);
+        for(var d in results){
+            var singleInstance = JSON.parse('{}');
+            for(var j in tags){
+                singleInstance[tags[j]] = results[d][tags[j]];
+            }
+            filteredResults[z++] = singleInstance;
+        }
+
+        return filteredResults;
+    }
    
+}
+
+function createGraph(raw){
+    var graph = graphBuilder();
+    for(d in raw){
+        graph.addNode(raw[d].id);
+    }
+    for(d in raw){
+        var currKGLinks = raw[d].links;
+        for(link in currKGLinks){
+            if(graph.getNode(currKGLinks[link].target) != null){
+                graph.addLink(raw[d].id, currKGLinks[link].target);
+            }
+        }
+    }
+
+    return graph;
 }
 
 function lcToStandard(datasets) {
@@ -126,6 +224,7 @@ function dhToStandard(datasets) {
         currentItem['title'] = datasets[ds]['title'];
         currentItem['description'] = datasets[ds]['notes'];
         currentItem['website'] = datasets[ds]['url'];
+        currentItem['triples'] = '0';
         for(var item in currDsLinks){
             if(currDsLinks[item].key === 'triples')
                 currentItem['triples'] = currDsLinks[item].value;
@@ -164,5 +263,10 @@ function dhToStandard(datasets) {
 
 const aggregator = new KGs_Results_Aggregator();
 
-aggregator.multiTagSearch('museum', 'id');
-
+//temporaneo per analizzare i risultati, andrà eliminato 
+fs.writeFile("first_approach.json", JSON.stringify(aggregator.filterRersults(aggregator.multiTagSearch('museum', 'id', 'title', 'centrality'), 'id', 'title'), null, 2), function(err) {
+    if(err) {
+        return console.log(err);
+    }
+    console.log("The file was saved!");
+}); 

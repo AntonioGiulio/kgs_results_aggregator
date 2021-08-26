@@ -1,1 +1,2050 @@
-[]
+[
+  {
+    "id": "aliada-scanbit-net",
+    "title": "aliada-scanbit-net",
+    "description": "Open linked data from the Library and Museum of ARTIUM",
+    "website": "http://biblioteca.artium.org",
+    "triples": "20055",
+    "keywords": [
+      "format-foaf",
+      "format-frbroo",
+      "format-owl",
+      "format-owltime",
+      "format-skos",
+      "format-wgs84",
+      "license-metadata",
+      "lod",
+      "no-proprietary-vocab",
+      "no-vocab-mappings",
+      "provenance-metadata",
+      "publications",
+      "published-by-producer"
+    ],
+    "links": [
+      {
+        "target": "bluk-bnb",
+        "value": "0"
+      },
+      {
+        "target": "datos-bne-es",
+        "value": "551"
+      },
+      {
+        "target": "dbpedia",
+        "value": "1695"
+      },
+      {
+        "target": "europeana-lod-v1",
+        "value": "0"
+      },
+      {
+        "target": "freebase",
+        "value": "291"
+      },
+      {
+        "target": "geonames",
+        "value": "6"
+      },
+      {
+        "target": "hungarian-national-library-catalog",
+        "value": "24"
+      },
+      {
+        "target": "lcsh",
+        "value": "0"
+      },
+      {
+        "target": "lobid-organisations",
+        "value": "9"
+      },
+      {
+        "target": "lobid-resources",
+        "value": "84"
+      },
+      {
+        "target": "marc-codes",
+        "value": "2"
+      },
+      {
+        "target": "open-library",
+        "value": "75"
+      },
+      {
+        "target": "viaf",
+        "value": "227"
+      }
+    ],
+    "sparql": null
+  },
+  {
+    "id": "am-collections-online",
+    "title": "Auckland Museum Collections Online",
+    "description": "Search more than one million catalogue records from Auckland Museum’s natural sciences, human history and documentary heritage collections.",
+    "website": "api.aucklandmuseum.com",
+    "triples": "0",
+    "keywords": [
+      "Biodiversity",
+      "culture",
+      "heritage",
+      "science",
+      "sparql"
+    ],
+    "links": [],
+    "sparql": null
+  },
+  {
+    "id": "amsterdam-museum-as-edm-lod",
+    "title": "Amsterdam Museum as Linked Open Data in the Europeana Data Model",
+    "description": "The Amsterdam Museum dataset describes more than 70.000 cultural heritage objects related to the city of Amsterdam described by the museum. \r\n\r\nThe metadata was retrieved from an XML Web API of the museum's Adlib collection database and converted to RDF compliant with the Europeana Data Model (EDM). This makes the Amsterdam Museum data the first of its kind to be officially converted and made available in this format.\r\n\r\n",
+    "website": "http://semanticweb.cs.vu.nl/lod/am/",
+    "triples": "5000000",
+    "keywords": [
+      "amsterdam",
+      "country-netherlands",
+      "crossdomain",
+      "cultural",
+      "culturalheritage",
+      "datagovuk",
+      "deref-vocab",
+      "edm",
+      "europeana",
+      "lod",
+      "lodcloud-diagram-2011-09-19",
+      "lodcloud-diagram-2014-08-30",
+      "museum",
+      "no-license-metadata",
+      "no-provenance-metadata",
+      "publications",
+      "published-by-third-party",
+      "rdf",
+      "vu"
+    ],
+    "links": [
+      {
+        "target": "dbpedia",
+        "value": "43"
+      },
+      {
+        "target": "geonames-semantic-web",
+        "value": "658"
+      }
+    ],
+    "sparql": {
+      "title": "SPARQL Endpoint",
+      "description": "SPARQL endpoint for the DIVE+ data layer, which also includes Amsterdam Museum",
+      "access_url": "http://data.dive.beeldengeluid.nl/sparql/",
+      "status": "active"
+    }
+  },
+  {
+    "id": "archimedes-palimpset",
+    "title": "Archimedes Palimpset",
+    "description": "From excellent (txt) README (!) <http://www.archimedespalimpsest.net/0_ReadMe.txt>:\r\n\r\n1 Rights and Conditions of Use\r\n===============================\r\n\r\nThe Archimedes Palimpsest data is released with license for use under\r\nCreative Commons Attribution 3.0 Unported Access Rights. It is\r\nrequested that copies of any published articles based on the\r\ninformation in this data set be sent to The Curator of Manuscripts,\r\nThe Walters Art Museum, 600 North Charles Street, Baltimore MD 21201.\r\n\r\n2 Intended Audience and Consumers\r\n=================================\r\n\r\nThe Archimedes Palimpsest Digital Product is intended to serve any\r\ninterested user or party.  However, its content is focused on serving\r\nthe following groups.\r\n\r\n 1. Scholars of Greek and mathematics\r\n 2. Application providers\r\n 3. Libraries and archives\r\n 4. Image scientists, and scientists in other disciplines interested\r\n    in the production of the images\r\n \r\n3 Digital Project Data Set Purpose\r\n==================================\r\n\r\nThe Archimedes Palimpsest Digital Product provides all the digital\r\ninformation available on the Archimedes Palimpsest in a single digital\r\ndata set, with a standard structure.  Its purposes are threefold:\r\n \r\n 1. Serve as the authoritative digital data set of images in a\r\n    standardized format that meets the needs of users, information\r\n    providers, archives and libraries.\r\n \r\n 2. Provide derived information (i.e. transcriptions, processing\r\n    information) in the context of digital images of the original\r\n    manuscript in a single integrated package.\r\n \r\n 3. Offer a standard product sustainable by users to which current or\r\n    future contributors can add additional standardized information\r\n    (e.g. alternate texts, image analyses or conservation\r\n    information).\r\n\r\n\r\n4 Data Set Contents\r\n====================\r\n\r\nThis data set consists of:\r\n\r\n  1. a *core* content set digital images and transcriptions of the\r\n     Archimedes Palimpsest, each with accompanying metadata and\r\n     checksums\r\n\r\n  2. project-generated and third-party documentation of all included\r\n     components\r\n\r\n  3. supporting functional files, including XML schemas, and cascading\r\n     style sheet files\r\n\r\n  4. supplemental versions of the transcriptions by treatise and work\r\n\r\n  5. a directory for researcher contributed content files, not a part\r\n     of the core data set\r\n\r\n\r\n",
+    "website": "http://archimedespalimpsest.org",
+    "triples": "0",
+    "keywords": [
+      "access-bulk",
+      "archimedes",
+      "hellenic",
+      "scans",
+      "size-large",
+      "size-mb",
+      "texts"
+    ],
+    "links": [],
+    "sparql": null
+  },
+  {
+    "id": "ASCDC- NTM-Formosan-Aborigines",
+    "title": "The National Taiwan Museum's Formosan Aborigines Collections Digitizing Project (NTM-Formosan-Aborigines)",
+    "description": "The LOD dataset of ASCDC_The National Taiwan Museum's Formosan Aborigines Collections Digitizing Project (NTM- Formosan-Aborigines) was created by the Academia Sinica Center for Digital Cultures (ASCDC) and based on the metadata from “The National Taiwan Museum's Formosan Aborigines Collections Digitizing Project” (國立台灣博物館原住民文物典藏數位化計畫) in the “Taiwan Union Catalog” (數位典藏與數位學習聯合目錄, https://catalog.digitalarchives.tw/Organization/List.jsp?CID=38973). Originally, the metadata was established by the History & Ethnic Groups of National Taiwan Museum (NTM, 國立台灣博物館) in Taipei. It provides information on Taiwanese indigenous people’s cultural heritages collected by the NTM and can serve as a database for the study of the indigenous people in Taiwan. Containing 3,767 data records and 118,549 triples, the textual content within the LOD dataset is licensed under the Creative Commons Attribution (CC 0), while the rights of the digitized item are reserved by the National Taiwan Museum.",
+    "website": "https://data.ascdc.tw/en/data.php",
+    "triples": "118549",
+    "keywords": [
+      "ASCDC",
+      "Anthropology",
+      "Taiwanese Indigenous people",
+      "Cultural Heritages",
+      "National Taiwan Museum",
+      "Taiwan Union Catalog"
+    ],
+    "links": [
+      {
+        "_id": "8dd871ad-b482-bcf2-fab4-115e717952db",
+        "target": "getty-aat",
+        "value": "7258"
+      },
+      {
+        "_id": "f2c3f4cd-4fd7-2427-b179-b42f9e0e1ffe",
+        "target": "dbpedia",
+        "value": "4427"
+      },
+      {
+        "_id": "db59f096-3bfd-ad8a-22f3-14e62324c577",
+        "target": "viaf",
+        "value": "4177"
+      }
+    ],
+    "sparql": {
+      "_id": "8242abab-1d62-cb6b-4676-da41bb251b5b",
+      "title": "ASCDC LODDatasets - SPARQL Queries",
+      "description": "Access to the SPARQL endpoint of ASCDC's LOD datasets for data retrieval (with template-based examples), downloads and further reuse.",
+      "access_url": "https://data.ascdc.tw/en/sparql.php",
+      "status": "FAIL (400)"
+    }
+  },
+  {
+    "id": "ASCDC-NMMBA-Aquatic-Animals-in-Taiwan",
+    "title": "Research on the Aquatic Animals in Taiwan and its Neighborhood Area (NMMBA-Aquatic-Animals-in-Taiwan)",
+    "description": "The LOD dataset of ASCDC_Research on the Aquatic Animals in Taiwan and its Neighborhood Area (NMMBA-Aquatic-Animals-in- Taiwan) was created by the Academia Sinica Center for Digital Cultures (ASCDC) and based on the metadata from the “Research on the Aquatic Animals in Taiwan and its Neighborhood Area” (臺灣及鄰近地區水域動物相典藏之研究：魚類及蝦、蟹類計畫) in the “Taiwan Union Catalog” (數位典藏與數位學習聯合目錄, https://catalog.digitalarchives.tw/Organization/List.jsp?CID=4892). Originally, the metadata was established by the National Museum of Marine Biology and Aquarium (NMMBA, 國立海洋生物博物館) in Taiwan (ROC). It provides information on specimens of aquatic animals collected by the NMMBA and can serve as a database for the study of species in the coastal waters in and around Taiwan. Containing 7,311 data records and 73,696 triples, the textual content within the LOD dataset is licensed under the Creative Commons Attribution (CC 0), while the digitized items are under CC-BY-NC-SA.",
+    "website": "https://data.ascdc.tw/en/data.php",
+    "triples": "73696",
+    "keywords": [
+      "ASCDC",
+      "Biology",
+      "Aquatic Animals",
+      "Fishes",
+      "Crabs",
+      "Shrimps",
+      "Specimen",
+      "Taiwan",
+      "National Museum of Marine Biology and Aquarium",
+      "Taiwan Union Catalog"
+    ],
+    "links": [
+      {
+        "_id": "18daf878-ddbb-ed5a-8401-727e590eff73",
+        "target": "geonames-semantic-web",
+        "value": "3947"
+      },
+      {
+        "_id": "d4daf375-703b-ce94-b05c-c6590d6400ca",
+        "target": "viaf",
+        "value": "21765"
+      }
+    ],
+    "sparql": {
+      "_id": "ed1654cc-b914-0fd2-2efd-92111c06a1f5",
+      "title": "ASCDC LODDatasets - SPARQL Queries",
+      "description": "Access to the SPARQL endpoint of ASCDC's LOD datasets for data retrieval (with template-based examples), downloads and further reuse.",
+      "access_url": "https://data.ascdc.tw/en/sparql.php",
+      "status": "FAIL (400)"
+    }
+  },
+  {
+    "id": "ASCDC-NMMBA-Fish-Otoliths",
+    "title": "The Digital Collection of Taiwan's Fish Otoliths (NMMBA-Fish-Otoliths)",
+    "description": "The LOD dataset of ASCDC_The Digital Collection of Taiwan's Fish Otoliths (NMMBA-Fish-Otoliths) was created by the Academia Sinica Center for Digital Cultures (ASCDC) and based on the metadata from “The Digital Collection of Taiwan's Fish Otoliths” (國立海洋生物博物館台灣耳石典藏計畫) in the “Taiwan Union Catalog” (數位典藏與數位學習聯合目錄, https://catalog.digitalarchives.tw/Organization/List.jsp?CID=57275). Originally, the metadata was established by the National Museum of Marine Biology and Aquarium (NMMBA, 國立海洋生物博物館) in Taiwan (ROC). It provides information on specimens of fish otoliths collected by the NMMBA and can serve as a database for the study of fish species in the coastal waters in and around Taiwan. Containing 1,804 data records and 191,464 triples, the textual content within the LOD dataset is licensed under the Creative Commons Attribution (CC 0), while the digitized items are under CC-BY-NC-SA.",
+    "website": "https://data.ascdc.tw/en/data.php",
+    "triples": 0,
+    "keywords": [
+      "ASCDC",
+      "Biology",
+      "Aquatic Animals",
+      "Fishes",
+      "Otoliths",
+      "Specimen",
+      "Taiwan",
+      "National Museum of Marine Biology and Aquarium",
+      "Taiwan Union Catalog"
+    ],
+    "links": [
+      {
+        "_id": "d8373d42-d331-1ec2-7340-88fa16f5834a",
+        "target": "geonames-semantic-web",
+        "value": "340"
+      },
+      {
+        "_id": "4c941cfd-15cf-e2d1-7def-6e44b12f1125",
+        "target": "viaf",
+        "value": "3608"
+      }
+    ],
+    "sparql": {
+      "_id": "d74a6e73-a331-9fc6-aa7b-5ad073cb58fb",
+      "title": "ASCDC LODDatasets - SPARQL Queries",
+      "description": "Access to the SPARQL endpoint of ASCDC's LOD datasets for data retrieval (with template-based examples), downloads and further reuse.",
+      "access_url": "https://data.ascdc.tw/en/sparql.php",
+      "status": "FAIL (400)"
+    }
+  },
+  {
+    "id": "australia-northern-territory-place-names",
+    "title": "Northern Territory Place Names",
+    "description": "### SummaryNorthern Territory place names register extract, containing locations of aboriginal communities, ambulance stations, roadhouses, urban parks, post offices, museums, libraries, fire stations, colleges and schools.### Further details\n\nNorthern Territory place names register extract, containing locations of aboriginal communities, ambulance stations, roadhouses, urban parks, post offices, museums, libraries, fire stations, colleges and schools.\n\n### Note\n\n                This content was directly extracted\n                from the Australian government's website:\n                http://data.australia.gov.au/ by a machine,\n                please refer to the source for accurate and\n                timely information.",
+    "website": "http://data.australia.gov.au/76",
+    "triples": "0",
+    "keywords": [
+      "australia",
+      "country-australia",
+      "cultural-institutions",
+      "department-of-planning-and-infrastructure-nt",
+      "emergency-services",
+      "parks",
+      "schools"
+    ],
+    "links": [],
+    "sparql": null
+  },
+  {
+    "id": "australia-powerhouse-museum-collection",
+    "title": "Powerhouse Museum Collection",
+    "description": "### SummarySearch 73,567 objects collected from 1880 to the present day from steam engines to fine glassware, postage stamps to robot dogs. This interactive database contains thousands of zoomable images and research into the Museum’s collection, much of it made public for the first time.\r\nThe Museum is continually adding to its collection and a selection of [...]### Further details\r\nSearch 73,567 objects collected from 1880 to the present day from steam engines to fine glassware, postage stamps to robot dogs. This interactive database contains thousands of zoomable images and research into the Museum’s collection, much of it made public for the first time.\r\nThe Museum is continually adding to its collection and a selection of new acquisitions can also be browsed.\r\nPlease be aware that the collection database does not contain everything in our collection and that object records are updated frequently.\r\n### Note\r\n                This content was directly extracted\r\n                from the Australian government's website:\r\n                http://data.australia.gov.au/ by a machine,\r\n                please refer to the source for accurate and\r\n                timely information.",
+    "website": "http://data.australia.gov.au/102",
+    "triples": "0",
+    "keywords": [
+      "artifacts",
+      "australia",
+      "city-sydney",
+      "collection",
+      "country-australia",
+      "culturalheritage",
+      "metadata",
+      "museum",
+      "objects",
+      "powerhouse-museum",
+      "powerhouse-museum-collection"
+    ],
+    "links": [],
+    "sparql": null
+  },
+  {
+    "id": "australia-subset-of-powerhouse-museum-photographic-collection-in-flickr-commons",
+    "title": "Subset of Powerhouse Museum Photographic Collection in Flickr Commons",
+    "description": "### SummaryCurrently includes 1300 photographs including 1000 from the Tyrrell Collection and 117 Thomas Lennon Photographic Collection.### Further details\r\nCurrently includes 1300 photographs including 1000 from the Tyrrell Collection and 117 Thomas Lennon Photographic Collection.\r\n### Note\r\n                This content was directly extracted\r\n                from the Australian government's website:\r\n                http://data.australia.gov.au/ by a machine,\r\n                please refer to the source for accurate and\r\n                timely information.",
+    "website": "http://data.australia.gov.au/356",
+    "triples": "0",
+    "keywords": [
+      "australia",
+      "country-australia",
+      "flickr-commons",
+      "powerhouse-museum",
+      "powerhouse-museum-photographic-collection-in-flickr-commons"
+    ],
+    "links": [],
+    "sparql": null
+  },
+  {
+    "id": "bade_museum",
+    "title": "Bade Museum",
+    "description": "This project is a digital catalog of all the artifacts, archives, and photographs from the Tell en-Nasbeh Collection at the Badè Museum of Biblical Archaeology at Pacific School of Religion in Berkeley, CA. This collection derives from the excavations of Tell en-Nasbeh conducted by William Frederic Badè between 1926 and 1935. The project was jointly sponsored by the Pacific School of Religion (PSR) and the American Schools of Oriental Research (ASOR) and represents one of the earliest scientific excavations in Israel/Palestine.\r\n\r\nUnlike many museum collections, this collection has fairly detailed contextual information for most objects. Additional object descriptions, media, and contextual information are forthcoming.",
+    "website": "http://opencontext.org/projects/B4345F6A-F926-4062-144E-3FBC175CC7B6",
+    "triples": "0",
+    "keywords": [
+      "1stmillennium",
+      "4thmillennium",
+      "archaeology",
+      "babylonian",
+      "biblicalarchaeology",
+      "byzantine",
+      "earlybronze",
+      "hellenistic",
+      "ironage",
+      "israel",
+      "judah",
+      "neareast",
+      "palestine",
+      "persian",
+      "roman",
+      "southernlevant",
+      "tomb",
+      "town"
+    ],
+    "links": [],
+    "sparql": null
+  },
+  {
+    "id": "bncf-ns",
+    "title": "Thesaurus BNCF",
+    "description": "Nuovo soggettario (NS), edited by the National Central Library of Florence, is the Italian subject indexing tool for various types of resources. It has been developed in compliance with the IFLA recommendations, and other international standards in the field of subject indexing. This tool has been created for general and specialized Italian libraries, and for museums, multimedia libraries, archives and documentation centres. The main component of the NS is a general thesaurus available on the web since 2007 (http://thes.bncf.firenze.sbn.it/ricerca.php). The thesaurus comprises nowadays approximately 66.650 terms and it is updated on a regular basis.\nAll metadata can be used, in accordance with Creative Commons Attribution 2.5 licence.",
+    "website": "http://thes.bncf.firenze.sbn.it/",
+    "triples": "750947",
+    "keywords": [
+      "publications",
+      "bibliographics",
+      "format-rdf",
+      "format-skos",
+      "library",
+      "authorities",
+      "linkeddata"
+    ],
+    "links": [
+      {
+        "_id": "08f0d014-854c-6e84-289f-3ade2667ab57",
+        "target": "getty-aat",
+        "value": "72"
+      },
+      {
+        "_id": "b163aeb4-2049-6fc4-db9c-61b867ba6366",
+        "target": "lcsh",
+        "value": "15097"
+      },
+      {
+        "_id": "06547138-85e1-1b8d-ebf4-23158b4bd96f",
+        "target": "dnb-gemeinsame-normdatei",
+        "value": "1556"
+      },
+      {
+        "_id": "167975df-0392-d680-387e-461935ec144e",
+        "target": "datos-bne-es",
+        "value": "1158"
+      },
+      {
+        "_id": "a925d694-7c53-4535-19d4-9a0f73bcf07e",
+        "target": "data-bnf-fr",
+        "value": "12794"
+      },
+      {
+        "_id": "213c950f-5f3e-5160-33fb-a7137af474a0",
+        "target": "agrovoc",
+        "value": "2920"
+      }
+    ],
+    "sparql": {
+      "title": "http://digitale.bncf.firenze.sbn.it/openrdf-workbench/repositories/NS/query",
+      "_id": "7f383679-3883-e3aa-e7fa-69db89df16fc",
+      "description": "Thesaurus BNCF - Endpoint SPARQL",
+      "access_url": "http://digitale.bncf.firenze.sbn.it/openrdf-workbench/repositories/NS/query",
+      "status": "OK"
+    }
+  },
+  {
+    "id": "british-museum",
+    "title": "British Museum Semantic Web Collection Online",
+    "description": " It provides access to the same collection data available through the Museum’s web presented Collection Online, but in a computer readable format. The use of the W3C open data standard, RDF, allows the Museum’s collection data to join and relate to a growing body of linked data published by other organisations around the world interested in promoting accessibility and collaboration.\r\n\r\nThe data has also been organised using the CIDOC-CRM (Conceptual Reference Model) crucial for harmonising with other cultural heritage data. The current version is beta and development work continues to improve the service. We hope that the service will be used by the community to develop friendly web applications that are freely available to the community.\r\n",
+    "website": "http://collection.britishmuseum.org/",
+    "triples": "0",
+    "keywords": [
+      "culturalheritage"
+    ],
+    "links": [],
+    "sparql": null
+  },
+  {
+    "id": "british-museum-collection",
+    "title": "British Museum Collection",
+    "description": "Welcome to this Linked Data and SPARQL service. It provides access to the same collection data available through the Museum?s web presented Collection Online, but in a computer readable format. The use of the W3C open data standard, RDF, allows the Museum?s collection data to join and relate to a growing body of linked data published by other organisations around the world interested in promoting accessibility and collaboration.\r\n\r\nThe data has also been organised using the CIDOC-CRM (Conceptual Reference Model) crucial for harmonising with other cultural heritage data. The current version is beta and development work continues to improve the service. We hope that the service will be used by the community to develop friendly web applications that are freely available to the community. \r\n\r\nLicence available at http://collection.britishmuseum.org/Licensing",
+    "website": "http://collection.britishmuseum.org",
+    "triples": "105635648",
+    "keywords": [
+      "cultural",
+      "culturalheritage",
+      "deref-vocab",
+      "format-cidoc-crm",
+      "format-foaf",
+      "format-rdf",
+      "format-skos",
+      "lod",
+      "lodcloud-diagram-2014-08-30",
+      "lodcloud.candidate",
+      "no-license-metadata",
+      "no-provenance-metadata",
+      "no-vocab-mappings",
+      "publications",
+      "published-by-producer",
+      "sparql"
+    ],
+    "links": [],
+    "sparql": null
+  },
+  {
+    "id": "bwr",
+    "title": "Built Work Registry",
+    "description": "The Built Works Registry (BWR) is a collaborative project funded by a 2010 Institute of Museum and Library Services (IMLS) National Leadership Grant. The goal of BWR is to create and develop a freely available registry of architectural works and the built environment. The Avery Architectural & Fine Arts Library at Columbia University, Artstor and the Getty Research Institute (GRI) are the principal collaborators for this project. An international advisory council provided guidance on BWR development.\r\n\r\nThe BWR seeks to assist with providing a unique identifier for specific built works. Built work creators and locations are often identified in metadata records and controlled by community standards (e.g. LCNAF, ULAN, TGN, GNIS), but there is no community-wide list of the works themselves. Given this, the identification of architectural works and the built environment presented a unique challenge for scholars and catalogers, resulting in redundant compilation of works lists on the part of various catalogers and institutions. BWR is conceived and developed to address this issue by creating a shared community infrastructure for cataloging records of built works.\r\n\r\nBWR's goal is to aggregate existing work records originating from multiple institutional sources that identify and catalog structures in the built environment in different ways, and normalize those data into a single descriptive record. Every built work included in BWR is assigned a unique identifier number or BWR ID. The BWR ID serves the same purpose as the ISBN/ISSN system does in the world of publishing and provides a standardized system by which a built work can be identified. A BWR record includes a unique ID number, a preferred name and (when possible) variant names, location and geo-location coordinates.\r\n\r\nAs an international registry for the built environment, the establishment of and continued growth of BWR is a step toward the creation of a fully integrated and inclusive built works authority file, which at this time does not exist. In the services of this longer-term goal, BWR will serve as one of the core contributors to the Getty Research Institute's Cultural Objects Name Authority® (CONA). Over time, CONA will contain authority records for cultural works, including architecture and the built environment.",
+    "website": "http://builtworksregistry.org/",
+    "triples": "0",
+    "keywords": [
+      "buildings",
+      "built work registry",
+      "bwr",
+      "cultural",
+      "places"
+    ],
+    "links": [],
+    "sparql": null
+  },
+  {
+    "id": "catalogo-de-informacion-publica",
+    "title": "Catálogo de información pública",
+    "description": "### About\r\n\r\nCatalogue of Spain's public sector information.\r\n\r\n### Areas covered\r\n\r\nThe catalogue covers the following information agencies. English titles have been generated by Google Translate, and may not reflect agencies' actual English titles.\r\n\r\n*\tGeneral Coordination Branch Library\r\n*\tSpanish Airports and Air Navigation (AENA)\r\n*\tSpanish Agency for International Development Cooperation (AECI)\r\n*\tSpanish Food Safety Agency (AESAN)\r\n*\tState Tax Administration Agency (AEAT)\r\n*\tMeteorological Agency (AEMET)\r\n*\tAgency Olive Acetite\r\n*\tBiblioteca Nacional (BNE)\r\n*\tGeology Library, University of Barcelona\r\n*\tOfficial State Bulletin (BOE)\r\n*\tArab House\r\n*\tSpanish Metrology Centre (CEM)\r\n*\tSpanish Center for Subtitles and Audio Description (CESyA)\r\n*\tNational Geographic Information Center (IGN)\r\n*\tEnvironmental Documentation Centre and Library General MARM\r\n*\tCultural Documentation Center\r\n*\tDocumentation Centre Theatre\r\n*\tDocumentation Center of Music and Dance\r\n*\tCenter for Legal Studies (CEJ)\r\n*\tCenter for Political and Constitutional Studies (CEPC)\r\n*\tCenter for Studies and Experimentation of Public Works (CEDEX)\r\n*\tCentre for Sociological Research (CIS)\r\n*\tResearch Centre in Energy, Environment and Technology (CIEMAT)\r\n*\tPress Center of the Ministry of the Presidency\r\n*\tCenter Publications Gazette of the Ministry of Economy and Finance\r\n*\tReference Center for Personal Autonomy and Technical Aids (CEAPAT)\r\n*\tCentre for Industrial Technological Development (CDTI)\r\n*\tCommissioner for the Tobacco Market\r\n*\tNational Competition Commission (CNC)\r\n*\tNational Energy Commission (CNE)\r\n*\tMarket Commission (CNMV)\r\n*\tMarket Commission (CMT)\r\n*\tSpanish Company for Financing for Development (COFIDES)\r\n*\tCivil engineering support services\r\n*\tEbro Hydrographic Confederation (CHE)\r\n*\tHydrographic Confederation of the Guadalquivir (CHG)\r\n*\tGuadiana River Basin\r\n*\tHydrographic Confederation Miño-Sil\r\n*\tSegura basin\r\n*\tConference of Rectors of Spanish Universities (CRUE)\r\n*\tCongress of Deputies\r\n*\tEconomic and Social Council (CES)\r\n*\tState Board of Education\r\n*\tGeneral Council of the Judiciary (CGPJ)\r\n*\tInter-Territorial Council of the National Health Service (NHS)\r\n*\tConsejo Superior de Investigaciones Científicas (CSIC)\r\n*\tYouth Council of Spain (CJE)\r\n*\tConsorcio Zona Franca de Cádiz\r\n*\tConsorcio Zona Franca de Vigo\r\n*\tDG Agriculture\r\n*\tGeneral Directorate of Macroeconomic Analysis and International Economics\r\n*\tGeneral Directorate of Fine Arts, Museums and Heritage\r\n*\tDirectorate General of Foreign Communications\r\n*\tDirectorate General of Financial Coordination with the Autonomous Communities and Local Government\r\n*\tGeneral Directorate of Community Funds\r\n*\tGeneral Directorate of Hydraulic Works and Water Quality\r\n*\tDirectorate General of Small and Medium Business\r\n*\tGeneral Directorate of Insurance and Pension Funds\r\n*\tDirección General de Tráfico (DGT)\r\n*\tGeneral Directorate of Police and Civil Guard\r\n*\tGeneral Directorate of Cadastre\r\n*\tNational Company for Radioactive Waste (ENRESA)\r\n*\tAgricultural Insurance Agency\r\n*\tExpo Zaragoza Empresarial, SA\r\n*\tSpanish Agricultural Guarantee Fund (FEGA)\r\n*\tFund Regulation and Organization Products Market Fisheries and Mariculture (FROM)\r\n*\tSpanish Armed Forces\r\n*\tBiodiversity Foundation\r\n*\tFoundation Research Center of Neurological Diseases (CIEN)\r\n*\tEguia-Careaga Fundazioa Foundation\r\n*\tFundación Escuela de Organización Industrial\r\n*\tInternational and Latin American Foundation for Administration and Public Policy (FIIAPP)\r\n*\tLazarus Foundation Galdiano\r\n*\tFoundation for Industrial Technology Foresight Observatory (OPTI)\r\n*\tFoundation for Pluralism and Coexistence\r\n*\tFoundation Interconfederal Service Mediation and Arbitration (SIMA)\r\n*\tVictims of Terrorism Foundation\r\n*\tSpanish Railway Foundation\r\n*\tFoundation for the Prevention of Occupational Risks\r\n*\tSystems Engineering for Defence of Spain, SA (ISDEFE)\r\n*\tEngineering and Economics of Transport, SA (INECO)\r\n*\tInstituto Cervantes\r\n*\tSpanish Institute of Foreign Trade (ICEX)\r\n*\tSpanish Institute of Oceanography (IEO)\r\n*\tNational Geographic Institute (IGN)\r\n*\tNational Geographic Institute (IGN)\r\n*\tGeological Survey of Spain (IGME)\r\n*\tNavy Hydrographic Institute\r\n*\tNational Institute of Public Administration (INAP)\r\n*\tNational Statistics Institute (INE)\r\n*\tNational Institute for Public Health (INGESA)\r\n*\tNational Research Institute for Agriculture and Food Technology (INIA)\r\n*\tNational Institute of Communication Technologies, SA (INTECO)\r\n*\tNational Institute of Aerospace Technology (INTA)\r\n*\tNational Institute of Performing Arts and Music\r\n*\tNational Consumer Institute (INC)\r\n*\tInstituto de Astrofisica de Canarias (IAC)\r\n*\tInstitute of Accounting and Auditing (ICAC)\r\n*\tInstituto de Estudios Fiscales (IEF)\r\n*\tTeacher Training Institute, Research and Educational Innovation (IFIIE)\r\n*\tInstituto de Salud Carlos III\r\n*\tTourism Institute of Spain (TURESPAÑA)\r\n*\tInstitute of Cinematography and Audiovisual Arts (ICAA)\r\n*\tInstituto de la Juventud (Youth Institute)\r\n*\tInstitute of Cultural Heritage of Spain\r\n*\tInstitute for Energy Diversification and Saving of Energy (IDEA)\r\n*\tGeneral Comptroller of the State Administration (IGAE)\r\n*\tRecruitment Management Advisory Board\r\n*\tMinistry of Foreign Affairs and Cooperation\r\n*\tMinistry of Culture\r\n*\tMinistry of Defence\r\n*\tMinistry of Economy and Finance\r\n*\tMinistry of Education\r\n*\tMinistry of Public Works\r\n*\tMinistry of Industry, Tourism and Trade\r\n*\tMinistry of Justice\r\n*\tMinistry of Environment and Rural and Marine\r\n*\tMinistry of Territorial Policy and Public Administration\r\n*\tMinistry of Health, Social Affairs and Equal\r\n*\tMinistry of Labour and Immigration\r\n*\tMinistry of Interior\r\n*\tMuseo Nacional del Prado\r\n*\tNational Observatory for Telecommunication and Information Society (ONTSI)\r\n*\tSpanish Patent and Trademark Office (SPTO)\r\n*\tPRTR-Spain\r\n*\t060 Portal\r\n*\tPuertos del Estado\r\n*\tRoyal Spanish Academy (RAE)\r\n*\tRoyal Academy of Medicine\r\n*\tRoyal Academy of Pharmacy\r\n*\tReal Academia de Bellas Artes de San Fernando\r\n*\tRoyal Academy of Moral and Political Sciences\r\n*\tRoyal Academy of Exact, Physical and Natural\r\n*\tRoyal Academy of Jurisprudence and Legislation\r\n*\tReal Academia de la Historia (RAH)\r\n*\tRoyal Board on Disability\r\n*\tRed.es\r\n*\tSANDACH\r\n*\tSEPES (Public Enterprise Land)\r\n*\tSIGALSA\r\n*\tSecretary of State for Telecommunications and Information Society (SETSI)\r\n*\tTechnical Secretariat of the Ministry of Health, Social Affairs and Equal\r\n*\tGeneral Technical Secretariat. Documentation Centre.\r\n*\tGeneral Technical Secretariat. Media Centre.\r\n*\tGeneral Technical Secretariat. Publications Center.\r\n*\tGeneral Secretariat of the Sea\r\n*\tSecretary of State for Trade\r\n*\tSecretary of State for Finance and Budgets\r\n*\tSecretary of State for Immigration and Emigration\r\n*\tSenate of Spain\r\n*\tPublic Employment Service (SPEE)\r\n*\tPress Service of the Government of Spain\r\n*\tPost and Telegraph State Company, SA\r\n*\tState Society for Cultural Commemorations (SECC)\r\n*\tState Society Tourist Information Management, SA (SEGITTUR)\r\n*\tSociedad Estatal de Infraestructuras Agrarias (SEIASA)\r\n*\tState Industrial Holdings Company (SEPI)\r\n*\tPublic Rental Company (SPAlquiler)\r\n*\tDeputy General Directorate of State Archives\r\n*\tGeneral Coordination Branch Library\r\n*\tGeneral Branch and Arable Crops Industrial\r\n*\tGeneral Statistics Branch Ministry\r\n*\tDeputy General Directorate for the Promotion of Cinema and Audiovisual Industry\r\n*\tPlanning Bureau and Food Control\r\n*\tBranch for the Promotion of Cultural Industries and Foundations and Patronage\r\n*\tBranch for the Promotion of Fine Arts\r\n*\tBranch for the Promotion of Books, Reading and Spanish Literature\r\n*\tGeneral Branch Promotion and Cultural Industries and Foundations and Patronage\r\n*\tOffice for the Protection of Historical Heritage\r\n*\tInternational Affairs Division and Community Affairs\r\n*\tSpain's Constitutional Court\r\n*\tCentral Administrative Tribunal Económico\r\n*\tCourt of Auditors\r\n*\tEnvironment Area\r\n\r\n",
+    "website": "http://www.aporta.es/web/guest/buscador_de_catalogos",
+    "triples": "0",
+    "keywords": [
+      "country.es",
+      "country.spain",
+      "government",
+      "package-type.catalog"
+    ],
+    "links": [],
+    "sparql": null
+  },
+  {
+    "id": "cooper-hewitt-collection-data",
+    "title": "Cooper-Hewitt Collection Data",
+    "description": "The Cooper-Hewitt National Design Museum, based in New York City, is the preeminent museum and educational authority for the study of design in the United States. The dataset includes text metadata, or “tombstone” information - a brief object description that includes temporal, geographic, and provenance information - for over 120,000 objects from Cooper-Hewitt's permanent collection.",
+    "website": "http://www.cooperhewitt.org/collections/data",
+    "triples": "0",
+    "keywords": [
+      "art-history",
+      "design",
+      "museum",
+      "smithsonian"
+    ],
+    "links": [],
+    "sparql": null
+  },
+  {
+    "id": "culturegrid",
+    "title": "Culture Grid",
+    "description": "### About\r\n\r\nFrom the website:\r\n\r\n> The Culture Grid is designed to do two things. Firstly, it pulls together information from the thousands of museum, archive and library websites and databases. Secondly, it serves this information up to media partners such as Google and the BBC to ensure that it is available to as wide an audience as possible.\r\n\r\nCulture Grid aggregates content from a growing variety of cultural institutions. Current contributors are listed on the detailed search page :\r\nhttp://culturegrid.org.uk/discover/advanced. Some specific sub-collections available via culture-grid are:\r\n\r\nBeamish Treasures,  Bede's World,  Bowes Museum,  Collect Britain,  Collections Base,  Commanet,  Cornucopia,  Cornucopia, DiadEM,  Cornucopia Egyptology,  Cornucopia Familia,  Cornucopia Inspire,  Cornucopia London Libraries,\r\n  Cornucopia Portraiture,\r\n  Devon Etched,\r\n  Dorset Coast Digital Archive,\r\n  Durham County Council,\r\n  English Heritage,\r\n  Exploring 20th Century London,\r\n  Bishopsgate Institute,\r\n  Brent Museum,\r\n  Bromley Museum,\r\n  Croydon Museum and Heritage Service,\r\n  Florence Nightingale Museum,\r\n  Geffrye Museum,\r\n  Burgh House and Hampstead Museum,\r\n  Bruce Castle Museum (Haringey),\r\n  Horniman Museum,\r\n  Jewish Museum,\r\n  London Transport Museum,\r\n  Museum of Domestic Design and Architecture,\r\n  Museum of London,\r\n  Redbridge Local Studies,\r\n  Redbridge Museum,\r\n  World Rugby Museum,\r\n  Fitzwilliam Museum,\r\n  Folk Archive Resource North East,\r\n  Geffrye Museum Test,\r\n  Hunterian Museum,\r\n  iSee Gateshead,\r\n  Kirklees Image Archive,\r\n  Lambeth Landmark,\r\n  Leodis,\r\n  Manchester City Galleries,\r\n  Michael UK,\r\n  Michael UK DCollections,\r\n  Michael UK Institutions,\r\n  Michael UK PCollections,\r\n  Michael UK Projects,\r\n  Michael UK Service,\r\n  MLA Institutions,\r\n  Picture the Past,\r\n  Portable Antiquities,\r\n  Sense of Place South East,\r\n  Seven Stories,\r\n  Tyne and Wear Imagine\r\n\r\n### Access\r\n\r\nThe Culture Grid content is best thought of, like most repositories, as a constantly expanding stream of content rather than something that is versioned in discrete chunks. Access is via the OAIPMH protocol which can be used to download the full set of culture grid records, and to obtain change-sets of records updated since the last OAI harvest.\r\n\r\n### Openness\r\n\r\nNot clear. Website states: \r\n\r\n> Copyright © Collections Trust 2009. All Rights Reserved.\r\n\r\nContent is aggregated and preserved from a number of host organisations and services and made public by the grid. Culture-Grid itself acts as a referetory and is trying to clarify licensing with each data provider. Generally, the metadata is freely available although the content the metadata points back to will be licensed differently. Each individual metadata record has a license property. By default CG Content is licensed CC-nc-nd license, but users should check on a per record basis. It is possible to filter searches by license (dcterms.license). For OAI, developers would need to check license by license. Use of OAI to gather updates would alert harvesters to re-licensed records.\r\n\r\nThe Copyright statement on the site most likely refers to the site content rather than the culture grid content.",
+    "website": "http://www.collectionstrust.org.uk/culturegrid",
+    "triples": "0",
+    "keywords": [
+      "culturalheritage",
+      "culture",
+      "heritage",
+      "museum"
+    ],
+    "links": [],
+    "sparql": null
+  },
+  {
+    "id": "data-and-images-posters-from-danish-movies-1886--the-present",
+    "title": "Data and images/posters from Danish movies (1886 - the present)",
+    "description": "The dataset contains information (metadata and movie stills and posters) from Danish movies 1896 -> the present. \r\nIt is the entire contents of the National Filmography of the Danish Film Museum (a department of the Danish Film Institute, the government body responsible for implementing public policy regarding Danish films and cinema culture).\r\n\r\n",
+    "website": "http://www.dfi.dk/faktaomfilm/nationalfilmografien/om-nationalfilmografien/aaben-dataadgang-til-nationalfilmografien.aspx",
+    "triples": "0",
+    "keywords": [
+      "art-history",
+      "country-denmark",
+      "culture",
+      "film",
+      "movie",
+      "opendatachallenge"
+    ],
+    "links": [],
+    "sparql": null
+  },
+  {
+    "id": "data-hnm-hu",
+    "title": "data-hnm-hu - Hungarian National Museum Datasets",
+    "description": "Open linked data from the Hungarian National Museum. \r\nThe following datasets and subsets are available:\r\n\r\n* Collections (dataset, short  name: colls)\r\n * Bibliographic Data of the Central Library (subset, short name: colls-lib-bib)\r\n\r\nThe Bibliographic Data of the Central Library contains the entire online catalogue of the library in BIBFRAME format and provides links to external sources including: [BNF](http://data.bnf.fr), [ISNI](http://isni.org), [LC NAF](http://id.loc.gov/authorities/names.html), [VIAF](http:viaf.org) and [Wikidata](http://wikidata.org).\r\n\r\nOne of the aims of this publication is to make Hungarian librarians more familiar with BIBFRAME. In order to achieve this the BIBFRAME and the MARC descriptions are cross linked. Knowing the BIBFRAME URI of an instance:\r\n\r\n[http://data.hnm.hu/id/colls/lib/bib/Instance/MNMKVT19563](http://data.hnm.hu/id/colls/lib/bib/Instance/MNMKVT19563)\r\n\r\none can get the MARC description by appending \".opac\" to the URI:\r\n\r\n[http://data.hnm.hu/doc/colls/lib/bib/Instance/MNMKVT19563.opac](http://data.hnm.hu/doc/colls/lib/bib/Instance/MNMKVT19563.opac).\r\n\r\nKnowing the permalink of an OPAC record \r\n\r\n[http://link.hnm.hu/lib/bib/MNMKVT19563](http://link.hnm.hu/lib/bib/MNMKVT19563)\r\n\r\none can get the BIBRAME description in HTML format by appending .rdf to it:\r\n\r\n[http://link.hnm.hu/lib/bib/MNMKVT19563.rdf](http://link.hnm.hu/lib/bib/MNMKVT19563.rdf).\r\n\r\nOther formats can also be invoked by appending the following extensions:\r\n.rdf-ttl, .rdf-nt, .rdf-json, .rdf-jsonld, and .rdf-rdf. The .rdf-rdf extentsion gives back the rdf-xml format.\r\n\r\nClicking the BIBFRAME icon in the OPAC also leads to the BIBFRAME description.\r\n\r\nThe OPAC pages also support the link rel discovery service in order for the crawlers and other programs to find the RDF descriptions in different formats automatically.\r\n\r\nThe project was carried out in partnership with @Cult srl., Italy (MARC BIBFRAME conversion) and Monguz Ltd., Hungary (OPAC modification). We also used some parts of the ALIADA open source tool.\r\n\r\nThe @Cult MARC21 BIBFRAME conversion have the following main features:\r\n\r\n- Work recognition\r\n- Entity recognition\r\n- Name entities are linked to external datasets.\r\n\r\nThe BIBFRAME dataset will be updated periodically as BIBFRAME and the conversion evolves. ",
+    "website": "http://hnm.hu",
+    "triples": "1993963",
+    "keywords": [
+      "format-bibframe",
+      "format-owl",
+      "format-rdf",
+      "format-rdfs",
+      "license-metadata",
+      "lod",
+      "no-proprietary-vocab",
+      "published-by-producer"
+    ],
+    "links": [
+      {
+        "target": "data-bnf-fr",
+        "value": "10333"
+      },
+      {
+        "target": "http",
+        "value": "18675"
+      },
+      {
+        "target": "library-of-congress-name-authority-file",
+        "value": "19396"
+      },
+      {
+        "target": "viaf",
+        "value": "21512"
+      },
+      {
+        "target": "wikidata",
+        "value": "9329"
+      }
+    ],
+    "sparql": null
+  },
+  {
+    "id": "data-szepmuveszeti-hu",
+    "title": "data-szepmuveszeti-hu",
+    "description": "Open linked data from the Museum of Fine Arts Budapest",
+    "website": "http://www.szepmuveszeti.hu",
+    "triples": "334699",
+    "keywords": [
+      "format-foaf",
+      "format-frbroo",
+      "format-owl",
+      "format-owltime",
+      "format-skos",
+      "format-wgs84",
+      "license-metadata",
+      "lod",
+      "no-proprietary-vocab",
+      "no-vocab-mappings",
+      "provenance-metadata",
+      "publications",
+      "published-by-producer"
+    ],
+    "links": [
+      {
+        "target": "bluk-bnb",
+        "value": "0"
+      },
+      {
+        "target": "datos-bne-es",
+        "value": "48"
+      },
+      {
+        "target": "dbpedia",
+        "value": "329"
+      },
+      {
+        "target": "europeana-lod-v1",
+        "value": "627"
+      },
+      {
+        "target": "freebase",
+        "value": "848"
+      },
+      {
+        "target": "geonames",
+        "value": "6"
+      },
+      {
+        "target": "hungarian-national-library-catalog",
+        "value": "704"
+      },
+      {
+        "target": "lcsh",
+        "value": "0"
+      },
+      {
+        "target": "lobid-organisations",
+        "value": "0"
+      },
+      {
+        "target": "lobid-resources",
+        "value": "0"
+      },
+      {
+        "target": "marc-codes",
+        "value": "1"
+      },
+      {
+        "target": "open-library",
+        "value": "0"
+      },
+      {
+        "target": "viaf",
+        "value": "0"
+      }
+    ],
+    "sparql": null
+  },
+  {
+    "id": "datos-artium-org",
+    "title": "datos-artium-org",
+    "description": "Open linked data from the Library and Museum of ARTIUM",
+    "website": "http://biblioteca.artium.org",
+    "triples": "4436657",
+    "keywords": [
+      "format-foaf",
+      "format-frbroo",
+      "format-owl",
+      "format-owltime",
+      "format-skos",
+      "format-wgs84",
+      "license-metadata",
+      "lod",
+      "no-proprietary-vocab",
+      "no-vocab-mappings",
+      "provenance-metadata",
+      "publications",
+      "published-by-producer"
+    ],
+    "links": [
+      {
+        "target": "bluk-bnb",
+        "value": "2693"
+      },
+      {
+        "target": "datos-bne-es",
+        "value": "0"
+      },
+      {
+        "target": "dbpedia",
+        "value": "27127"
+      },
+      {
+        "target": "europeana-lod-v1",
+        "value": "8955"
+      },
+      {
+        "target": "freebase",
+        "value": "11678"
+      },
+      {
+        "target": "geonames",
+        "value": "0"
+      },
+      {
+        "target": "hungarian-national-library-catalog",
+        "value": "91752"
+      },
+      {
+        "target": "lcsh",
+        "value": "0"
+      },
+      {
+        "target": "lobid-organisations",
+        "value": "32"
+      },
+      {
+        "target": "lobid-resources",
+        "value": "0"
+      },
+      {
+        "target": "marc-codes",
+        "value": "0"
+      },
+      {
+        "target": "open-library",
+        "value": "0"
+      },
+      {
+        "target": "viaf",
+        "value": "2174"
+      }
+    ],
+    "sparql": null
+  },
+  {
+    "id": "deeptree-exhibit-visualizing-the-tree-of-life",
+    "title": "DeepTree Exhibit: Visualizing the Tree of Life",
+    "description": "The Tree of Life Web Project (ToL) is a collaborative effort of biologists and nature enthusiasts from around the world. On more than 10,000 World Wide Web pages, the project provides information about biodiversity, the characteristics of different groups of organisms, and their evolutionary history (phylogeny).\r\n\r\nAggregates data: 90k nodes 70 species, \"but too sparse\". NCBI += 3k names, http://eol.org , http://timetree.org \r\n\r\n\r\nhttp://lifeonearth.seas.harvard.edu/\r\n\r\n\r\nThey spent 10% of the effort to gather data. They are logging use in the museum, might make available.",
+    "website": "http://tolweb.org/tree/",
+    "triples": "0",
+    "keywords": [],
+    "links": [],
+    "sparql": null
+  },
+  {
+    "id": "dnb-gemeinsame-normdatei",
+    "title": "Gemeinsame Normdatei (GND)",
+    "description": "GND stands for \"Gemeinsame Normdatei\" (Integrated Authority File) and offers a broad range of elements to describe authorities. The GND originates from the German library community and aims to solve the name ambiguity problem in the library world. Corresponding data is usually expressed in a customized MARC 21 Authority Format (GND MARC Format) which is quite domain specific and is not used beyond the library and publisher world. The GND ontology tries to bridge this gap by providing a format specification for the usage in the semantic web.\r\n\r\nThe need for name disambiguity and entries having an authoritative character is an issue that concerns a lot more communities than the library world. In a growing information society the unique identification and linking of persons, places and other authorities becomes more and more important. The GND Ontology aims to transfer the made experience from libraries to the web community by providing a vocabulary for the description of differentiated and undifferentiated persons, conferences or events, corporate bodies, places or geographic names, subject headings, and works.\r\n\r\nTo ensure compatibility aspects the GND ontology aligns a number of already established vocabularies like the FOAF vocabulary.\r\n\r\nThe GND is a young specification that probably will underlie certain smaller changes. However, the currently defined classes and properties have a status of stability. But we also expect the introduction of additional elements caused by newly upcoming requirements within the community. From January 2014 on, the Linked Data Service of the German National Library (DNB) will issue scheduled releases and will be integrated in the export releases of the other formats. Changes to the conversion and to the data modelling will be made in January, May and September. Changes will be notified in advance via the Linked Data Service mailing list (http://lists.dnb.de/mailman/listinfo/lds) and the Integrated\r\nAuthority File GND Ontology mailing list (http://lists.dnb.de/mailman/listinfo/gnd-ontology). Please subscribe if you are interested in receiving information about future developments in DNB Linked Data Services.\r\nIn a schedule corresponding to the export releases, updated dumps of the authority and bibliographic data in RDF/XML and Turtle will be available for download in February, June and October.\r\n\r\nThe authors welcome comments on this document, preferably via the public GND ontology list; publicarchives are available. \r\n\r\nThe Integrated Authority File\r\n\r\nThe \"Gemeinsame Normdatei\" (GND, Integrated Authority File) brings together the content of the former Corporate Body Authority File GKD (Gemeinsame Körperschaftsdatei), the Name Authority File PND (Personennamendatei), the Subject Headings Authority File SWD (Schlagwortnormdatei) and the Uniform Title File of the Deutsches Musikarchiv EST file (Einheitssachtitel-Datei ) to form an integrated authority file.\r\n\r\nThe target has therefore been reached of setting up an authority file which covers all types of entities and which serves as a common, authoritative reference system for libraries' bibliographic data and for the cataloging data of other authority file users such as archives, museums, projects, scientific and cultural institutions. All library networks in the German-speaking countries and the German Union Catalogue of Serials (ZDB) are involved in the GND project alongside the German National Library.\r\n\r\nThe GND should consign to the past problems arising from different formats, parallel storage of data records and different rules for descriptive and subject cataloging.\r\n\r\nThe objective of the GND is to form a modern, web-compatible authority file which is capable of networking the wide range of resources and information held by libraries and other cultural institutions in the German-speaking countries and making these accessible to users. To approach a web-compatible authority file we also provide the GND as linked data. Therefore we developed an independent GND specific vocabulary (GND Ontology) that almost completely covers the offered GND concepts provided in MARC 21. ",
+    "website": "http://www.dnb.de/EN/lds",
+    "triples": "214683517",
+    "keywords": [
+      "authorities",
+      "bibliographic",
+      "buildings",
+      "concepts",
+      "corporations",
+      "crossdomain",
+      "format-foaf",
+      "format-rdf",
+      "format-rdfs",
+      "format-skos",
+      "germany",
+      "lld",
+      "lod",
+      "no-deref-vocab",
+      "no-license-metadata",
+      "no-provenance-metadata",
+      "no-vocab-mappings",
+      "persons",
+      "places",
+      "published-by-producer",
+      "rdf"
+    ],
+    "links": [
+      {
+        "target": "dbpedia",
+        "value": "81706"
+      },
+      {
+        "target": "filmportal",
+        "value": "178233"
+      },
+      {
+        "target": "geonames",
+        "value": "52733"
+      },
+      {
+        "target": "orcid",
+        "value": "5839"
+      },
+      {
+        "target": "stw-thesaurus-for-economics",
+        "value": "15739"
+      },
+      {
+        "target": "viaf",
+        "value": "8536401"
+      },
+      {
+        "target": "wikipedia",
+        "value": "469478"
+      }
+    ],
+    "sparql": null
+  },
+  {
+    "id": "europeana-lod-v1",
+    "title": "Europeana Linked Open Data V1.0",
+    "description": "[data.europeana.eu](http://data.europeana.eu)</a> started as an experimental pilot  in February 2012 with a small number of data providers who committed at an early stage to Europeana's initiative of promoting more open data and new data exchange agreements.\r\n\r\nThe current version of data.europeana.eu contains all the data available on the [Europeana Portal](www.europeana.eu/). Check the description of the data at [http://datahub.io/dataset/europeana-lod](http://datahub.io/dataset/europeana-lod)\r\n\r\nThe first version of data.europeana.eu as used in the W3C Library Linked Data  group contained [open](http://creativecommons.org/publicdomain/zero/1.0/) metadata on 2.4 million texts, images, videos and sounds gathered by Europeana. These collections came from 8 direct Europeana providers encompassing over 200 cultural institutions from 15 countries. They cover a great variety of heritage objects, such as this [slovenian version of O Sole Mio](http://data.europeana.eu/item/92056/BD9D5C6C6B02248F187238E9D7CC09EAF17BEA59) from the National Library of Slovenia, or Neil Robson's [memories of the herring business](http://data.europeana.eu/item/09405f/533F9A826CB038D02C05A9814CF97E5D1B49BBEE) from the Tyne and Wear Archives & Museums. \r\nHere is an example URI to get started with:\r\nhttp://data.europeana.eu/item/92037/25F9104787668C4B5148BE8E5AB8DBEF5BE5FE03\r\n\r\nThe project has been described in a [paper](http://dcevents.dublincore.org/index.php/IntConf/dc-2011/paper/view/55) presented at the Dublin Core 2011 conference.\r\n",
+    "website": "http://data.europeana.eu/",
+    "triples": "117000000",
+    "keywords": [
+      "culturalheritage",
+      "culture",
+      "eu",
+      "europe",
+      "europeana",
+      "format-dc",
+      "format-ore",
+      "format-rdf",
+      "library",
+      "license-metadata",
+      "lld",
+      "lod",
+      "metadata",
+      "no-deref-vocab",
+      "no-vocab-mappings",
+      "provenance-metadata",
+      "publications",
+      "published-by-producer",
+      "void-sparql-endpoint"
+    ],
+    "links": [
+      {
+        "target": "dbpedia",
+        "value": "1304"
+      },
+      {
+        "target": "gemet",
+        "value": "863247"
+      },
+      {
+        "target": "geonames-semantic-web",
+        "value": "1650634"
+      },
+      {
+        "target": "swedish-open-cultural-heritage",
+        "value": "100489"
+      }
+    ],
+    "sparql": null
+  },
+  {
+    "id": "freebase-visual-art",
+    "title": "Freebase Visual Art",
+    "description": "Data regarding artworks, artists, museums and other visual art subjects.\r\n\r\nTab-delimited data dump available.\r\n\r\nLicence is CC-BY, although the attribution page says \"Many Freebase descriptions come from the Wikipedia. Wikipedia content is licensed under the GFDL, which requires its own attribution.\"",
+    "website": "http://www.freebase.com/view/visual_art",
+    "triples": "0",
+    "keywords": [
+      "art",
+      "artist",
+      "artwork"
+    ],
+    "links": [],
+    "sparql": null
+  },
+  {
+    "id": "german-artwork-collector-donates-collection-86",
+    "title": "German Artwork Collector Donates Collection",
+    "description": "The artwork world is actually abuzz using the most recent transfer regarding leading art collector Ingvlid Goez. The Actual leading German collector involving contemporary art, famous on her behalf costly and extraordinary collection, provides reported that they will be donating her Munich museum, in http://seogladiatorsau.drupalgardens.com/content/german-art-collector-donates-collection add-on to 375 additional functions owned in their private collection, towards the state of Bavaria. Horst Seehofer, the particular prime minister regarding Bavaria, offers called Goetz's gift \"a huge earn for your [state of Bavaria's] art collection.\" The Particular German state has lengthy been home to well-known contemporary artists and is actually also today http://www.19karen.com.au considered being among the actual fastest growing hot spots for fans of http://www.19karen.com.au contemporary art and also artwork culture. \n\nIn inclusion to this extraordinary, practically unprecedented donation, Goetz provides reported that they will permanently loan about 4,000 further contemporary artwork pieces for you to Bavaria in the future. Goetz may also remain in charge regarding her Munich museum and will likely be consulted prior to crucial choices are generally produced regarding the museum, its collections and any possible future purchases as well as sales on behalf http://www.19karen.com.au in the artwork collection. \n\nGoetz, that began collecting contemporary art 40 years ago, can be considered to be among the top ten contemporary artwork collectors inside the world. Within 1993, Goez opened her really own private museum to hold the girl collection. This is actually mysterious if the donation will affect museum prices, admission restrictions, as well as prospective long term purchases for your museum’s collection.\n\n",
+    "website": null,
+    "triples": "0",
+    "keywords": [
+      "Art galleries",
+      "Contemporary art"
+    ],
+    "links": [],
+    "sparql": null
+  },
+  {
+    "id": "getty-aat",
+    "title": "Art & Architecture Thesaurus",
+    "description": "The Art & Architecture Thesaurus® (AAT) is a structured, multilingual vocabulary including terms, descriptions, and other information for generic concepts related to art, architecture, and other cultural heritage, and conservation. For decades now, the AAT as been used as a primary reference by museums, art libraries, archives, visual resource catalogers, conservation specialists, archaeological projects, bibliographic projects, researchers, and information specialists who are dealing with the needs of these users. Like all of the Getty Vocabularies, the AAT is compliant with international standards and grows through contribution. \r\n\r\n** Openness **\r\nAAT data is released under Open Data Commons Attribution License. Adherence to ODC Attribution instructions for the correct assertion of attribution is encouraged. The preferred form of attribution for AAT is:\r\n\r\n\"*This [title or report or article or dataset] contains information from the Art & Architecture Thesaurus® (AAT) which is made available under the ODC Attribution License.*\"\r\n\r\nSpecial Case: In circumstances where providing the full attribution statement above is not technically feasible, the use of canonical AAT URIs is adequate to satisfy Section 4.3 of the ODC Attribution License.",
+    "website": null,
+    "triples": "0",
+    "keywords": [
+      "Thesauri",
+      "architecture",
+      "art",
+      "conservation",
+      "cultural heritage",
+      "format-skos",
+      "format-skosxl",
+      "lod",
+      "skos",
+      "topic.schemata"
+    ],
+    "links": [
+      {
+        "target": "lcsh",
+        "value": "335"
+      }
+    ],
+    "sparql": {
+      "title": "SPARQL Endpoint",
+      "description": "",
+      "access_url": "http://vocab.getty.edu/sparql",
+      "status": "active"
+    }
+  },
+  {
+    "id": "global-city-data",
+    "title": "Global City Data",
+    "description": "<p>A range of indicators for a selection of cities from the <a href=\"http://www.nyc.gov/html/ia/gprb/html/global/global.shtml\">New York City Global City database</a>.\n</p>\n<p>Dataset includes the following:\n</p>\n<p><strong>Geography</strong>\n</p>\n<p>City Area (km2)\n</p>\n<p>Metro Area (km2)\n</p>\n<p><strong>People</strong>\n</p>\n<p>City Population (millions)\n</p>\n<p>Metro Population (millions)\n</p>\n<p>Foreign Born\n</p>\n<p>Annual Population Growth\n</p>\n<p><strong>Economy</strong>\n</p>\n<p>GDP Per Capita (thousands $, PPP rates, per resident)\n</p>\n<p>Primary Industry\n</p>\n<p>Secondary Industry\n</p>\n<p>Share of Global 500 Companies (%)\n</p>\n<p>Unemployment Rate\n</p>\n<p>Poverty Rate\n</p>\n<p><strong>Transportation</strong>\n</p>\n<p>Public Transportation\n</p>\n<p>Mass Transit Commuters\n</p>\n<p>Major Airports\n</p>\n<p>Major Ports\n</p>\n<p><strong>Education</strong>\n</p>\n<p>Students Enrolled in Higher Education\n</p>\n<p>Percent of Population with Higher Education (%)\n</p>\n<p>Higher Education Institutions\n</p>\n<p><strong>Tourism</strong>\n</p>\n<p>Total Tourists Annually (millions)\n</p>\n<p>Foreign Tourists Annually (millions)\n</p>\n<p>Domestic Tourists Annually (millions)\n</p>\n<p>Annual Tourism Revenue ($US billions)\n</p>\n<p>Hotel Rooms (thousands)\n</p>\n<p><strong>Health</strong>\n</p>\n<p>Infant Mortality (Deaths per 1,000 Births)\n</p>\n<p>Life Expectancy in Years (Male)\n</p>\n<p>Life Expectancy in Years (Female)\n</p>\n<p>Physicians per 100,000 People\n</p>\n<p>Number of Hospitals\n</p>\n<p>Anti-Smoking Legislation\n</p>\n<p><strong>Culture</strong>\n</p>\n<p>Number of Museums\n</p>\n<p>Number of Cultural and Arts Organizations\n</p>\n<p><strong>Environment</strong>\n</p>\n<p>Green Spaces (km2)\n</p>\n<p>Air Quality\n</p>\n<p>Laws or Regulations to Improve Energy Efficiency\n</p>\n<p>Retrofitted City Vehicle Fleet\n</p>\n<p>Bike Share Program\n</p>",
+    "website": null,
+    "triples": "0",
+    "keywords": [
+      "city",
+      "global",
+      "indicators",
+      "world"
+    ],
+    "links": [],
+    "sparql": null
+  },
+  {
+    "id": "googleart-wrapper",
+    "title": "GoogleArt wrapper",
+    "description": "The GoogleArtProject is a place to explore museums from around the world, seeing and learning about the artwork they contain. It is a cool service, offering very high res images of the paintings, but not providing a machine-friendly access to the data shown. This server provides a wrapper around the HTML page for paintings and museums. It exposes part of the information using FOAF and Dublin Core ontologies and links the resource to DBpedia",
+    "website": "http://linkeddata.few.vu.nl/googleart/",
+    "triples": "37717",
+    "keywords": [
+      "art",
+      "crossdomain",
+      "format-dbp",
+      "format-dc",
+      "format-foaf",
+      "format-rdf",
+      "latc",
+      "lod",
+      "no-license-metadata",
+      "no-proprietary-vocab",
+      "no-provenance-metadata",
+      "opendatachallenge",
+      "published-by-third-party"
+    ],
+    "links": [
+      {
+        "target": "dbpedia",
+        "value": "1632"
+      }
+    ],
+    "sparql": null
+  },
+  {
+    "id": "greekchildrensartmuseum",
+    "title": "Greek Children Art  Museum dataset",
+    "description": "The \"LD-project\" deals with the creation of cultural Open Linked Data (LOD), based on the artifacts of Greek Children Art Museum, in Greece, Athens. It was created in the frame of Master Thesis of MSc. students, Marini Efstathia and Chondrogianni Maria, in Cultural Informatics postgraduate program at the Department of Cultural Technology and Communication of the University of the Aegean.\n\nLinks to published datasets : \nWikidata: 151 links,\nDBpedia: 489 links,\nWikiArt: 17 links,\nMoMA: 2 links,\nOthers (Wikimedia Commons, Benaki Museum, SearchCulture.org, etc.) with 1 link each: 15 links,\nTotal 674,\n\nDCAT Description: https://www.childrensartmuseum.gr/LD-project/",
+    "website": "https://www.childrensartmuseum.gr/LD-project/",
+    "triples": "2211",
+    "keywords": [
+      "Painting",
+      "Child Art",
+      "Creative Work",
+      "Museum"
+    ],
+    "links": [
+      {
+        "_id": "ed552487-b6e1-5799-262b-f002ccce92e0",
+        "target": "wikidata",
+        "value": "151"
+      },
+      {
+        "_id": "5d63d947-4f79-96df-1fdc-13ac96eb0b62",
+        "target": "dbpedia",
+        "value": "489"
+      }
+    ],
+    "sparql": {
+      "_id": "25f8ceac-7213-4927-b0b5-569d091d9a57",
+      "title": "GCAM sparql endpoint",
+      "description": "Fuseki2 Server",
+      "access_url": "http://ct-linkdata.aegean.gr/gcam/sparql",
+      "status": "FAIL (405)"
+    }
+  },
+  {
+    "id": "hampton-historic-map",
+    "title": "Hampton Historic Map",
+    "description": "Map of Historic Hampton, Virginia, via Hampton History Museum Google Map.  \r\nThree KML layers:  \r\nNeighborhood Districts  \r\nOther Regions in the Area  \r\nHistoric Points",
+    "website": null,
+    "triples": "0",
+    "keywords": [
+      "GIS",
+      "Hampton",
+      "History",
+      "Map"
+    ],
+    "links": [],
+    "sparql": null
+  },
+  {
+    "id": "hnm-cl-bibdata",
+    "title": "Hungarian National Museum - Central Library - Bibliographic Data",
+    "description": "The dataset contains the entire catalog of the Central Library of the Hungarian National Museum in many MARK and BIBFRAME formats. It can be accessed and downloaded in many ways. The access methods, formats, used character sets described here together with licence (C00), provenance and quality information: http://hnm.hu/hu/muzeum/konyvtar/nyilt-bibliografiai-adatok. More information about BIBFRAME dataset can be found here: https://datahub.io/dataset/data-hnm-hu",
+    "website": "",
+    "triples": "0",
+    "keywords": [
+      "MARC",
+      "OAI_PMH",
+      "UNICOD",
+      "Z39.50",
+      "bibliographic data",
+      "library"
+    ],
+    "links": [],
+    "sparql": null
+  },
+  {
+    "id": "https://www.childrensartmuseum.gr/LD-project/",
+    "title": "Greek Children Art  Museum dataset",
+    "description": "The \"LD-project\" deals with the creation of cultural Open Linked Data (LOD), based on the artifacts of Greek Children Art Museum, in Greece, Athens. It was created in the frame of Master Thesis of MSc. students, Marini Efstathia and Chondrogianni Maria, in Cultural Informatics postgraduate program at the Department of Cultural Technology and Communication of the University of the Aegean.\n\nDCAT Description: https://www.childrensartmuseum.gr/LD-project/",
+    "website": "https://www.childrensartmuseum.gr/LD-project/",
+    "triples": "2211",
+    "keywords": [
+      "Painting",
+      "Museum",
+      "Child Art",
+      "Creative Work"
+    ],
+    "links": [
+      {
+        "_id": "143f06c1-4de9-9622-6cde-a622875dbd2b",
+        "target": "wikidata",
+        "value": "150"
+      },
+      {
+        "_id": "c4702f88-916f-25fc-5f9f-a62e1266b1c1",
+        "target": "dbpedia",
+        "value": "489"
+      }
+    ]
+  },
+  {
+    "id": "leeds-international-film-festival-visitor-location-data",
+    "title": "Leeds International Film Festival Visitor Location Data",
+    "description": "<blockquote>\r\n<p>This dataset provides details of the number of visitors to the Leeds International Film Festival and their locations.</p>\r\n<p>The postcodes provided are for the individual customers who purchased tickets in advance through Box Office. It should be noted that these customers often buy multiple tickets and festival passes. This data does not include on-the-door sales or attendees to free events (for example Leeds Free Cinema Week, our exhibition at the Royal Armouries Museum, Vertical Cinema at Left Bank, Chapel FM and North Bar). It is estimated that, in 2014, over 40,000 people attended film festival events.</p>\r\n</blockquote>",
+    "website": null,
+    "triples": "0",
+    "keywords": [
+      "Festival",
+      "Film",
+      "Movies",
+      "Visitors",
+      "cd"
+    ],
+    "links": [],
+    "sparql": null
+  },
+  {
+    "id": "leeds-museums-and-galleries-highlights",
+    "title": "Leeds Museums and Galleries highlights",
+    "description": "<blockquote>\r\n<p>This dataset contains information about some key items held by the council's Museums service. The council is currently working on a new 'Collections Online' website. The items listed in this dataset will appear on this new site.</p>\r\n</blockquote>",
+    "website": null,
+    "triples": "0",
+    "keywords": [
+      "cd",
+      "collection",
+      "culture",
+      "gallery",
+      "highlights",
+      "museum"
+    ],
+    "links": [],
+    "sparql": null
+  },
+  {
+    "id": "linkedarc",
+    "title": "linkedarc.net archaeological datasets",
+    "description": "linkedarc.net is a Linked Data compliant hosting service for archaeologically themed data. Currently, linkedarc.net hosts the data of a single project, the Priniatikos Pyrgos Archaeological Project. The Priniatikos data is modelled primarily using the [CIDOC CRM](http://linkedarc.net/ontologies/ecrm.php \"CIDOC CRM\") ontology and its type values link to various public vocabularies, such as the [FISH](http://datahub.io/dataset/fish-archaeological-objects-thesaurus \"FISH  vocabularies\"), [Getty](http://www.getty.edu/research/tools/vocabularies \"Getty vocabularies\") and [British Museum](http://collection.britishmuseum.org/ \"British Museum vocabularies\").",
+    "website": null,
+    "triples": "0",
+    "keywords": [
+      "archaeology",
+      "lawdi",
+      "lod"
+    ],
+    "links": [],
+    "sparql": {
+      "title": "SPARQL endpoint",
+      "description": "Use the SPARQL interface to query the data of the linkedarc.net dataset.",
+      "access_url": "http://linkedarc.net/sparql",
+      "status": "active"
+    }
+  },
+  {
+    "id": "lobid-organisations",
+    "title": "lobid-organisations",
+    "description": "lobid-organisation is an Index of libraries and related organisations\r\nIt provides URIs for > 44 k  *library-organisations* and *museums*.The URIs are based on the existing and well established International Standard Identifier for Libraries and Related Organizations (*ISIL*) which can also act as MARC Organization Codes. They are assigned to library institutions by national or institutional agencies. There are ca. **44.000** institutions described.\r\n\r\nYou can find additional information about this data [here](https://wiki1.hbz-nrw.de/pages/viewpage.action?pageId=1572888).",
+    "website": "http://lobid.org/organisation",
+    "triples": "776735",
+    "keywords": [
+      "addresses",
+      "archive",
+      "authorities",
+      "authority",
+      "format-foaf",
+      "format-geo",
+      "format-geonames",
+      "format-hcard",
+      "format-vcard",
+      "format-xsd",
+      "germany",
+      "library",
+      "license-metadata",
+      "lld",
+      "lod",
+      "lodcloud-diagram-2011-09-19",
+      "lodcloud-diagram-2014-08-30",
+      "lodcloud.nolinks",
+      "museum",
+      "no-proprietary-vocab",
+      "no-vocab-mappings",
+      "organisations",
+      "organizations",
+      "provenance-metadata",
+      "publications",
+      "published-by-producer"
+    ],
+    "links": [
+      {
+        "target": "dbpedia",
+        "value": "3520"
+      },
+      {
+        "target": "dbpedia-de",
+        "value": "1289"
+      },
+      {
+        "target": "geonames-semantic-web",
+        "value": "13253"
+      }
+    ],
+    "sparql": null
+  },
+  {
+    "id": "lod-taiwan",
+    "title": "Open Data Web - a CKAN based linked open data repository in Taiwan",
+    "description": "==========================================================\r\n\r\n## Highlight 1: An old record is not a data but now defined as a new semantic dataset. \r\n   * i.e. its triples, graphs, links, file formats ...\r\n   * i.e. its revised, vocabulary encoded versions ...\r\n   * ex. data:d2148340 a dcat:dataset. #files:json-ld, ttl, XML\r\n\r\n## Highlight 2: A new method to curate, publish & visualize LOD graphs via CKAN portal. \r\n  * i.e. two models for one dataset published in two views.\r\n  * ex. <a href=\"http://data.odw.tw/record/d2148340/\">data:d2148340</a>.   # Dublin Core @schema1\r\n  * ex. data:d2148340 a data:Refined. # more semantics@schema2\r\n\r\n## Highlight 3: Validation & Reproducibility: Provenance and Contexts are in details. \r\n\r\n  * Currently records from 74 agents who have roles in NGO (2), Museum (5), Library (2), Government (9), Archive (1), and Academia (55).\r\n\r\n# Total Resources:\r\n* 843,309 records from 14 datasets.\r\n* 44,806,400 triples from 14 datasets encoded with DC 15 elements.\r\n* 25,913,304 triples from 832,803 records semantically refined with domain knowledges.\r\n\r\n",
+    "website": "http://data.odw.tw/",
+    "triples": "0",
+    "keywords": [
+      "AAT",
+      "CKAN",
+      "DCMI",
+      "EOL",
+      "LOD",
+      "Linked Data",
+      "R4R",
+      "Taiwan LOD",
+      "dcat",
+      "geonames",
+      "knowledge bases",
+      "lod",
+      "lodlam",
+      "metadata",
+      "ontology",
+      "provenance",
+      "reuse",
+      "schema.org",
+      "semantics",
+      "taiwan",
+      "wikidata"
+    ],
+    "links": [],
+    "sparql": {
+      "title": "Virtuoso SPARQL Query",
+      "description": "Some SPARQL Query examples: http://data.odw.tw/examples",
+      "access_url": "http://sparql.odw.tw/",
+      "status": "active"
+    }
+  },
+  {
+    "id": "lykke",
+    "title": "Oklahoma Property Cowboys and Indians",
+    "description": "Oklahoma is a situation that conjures up pictures of boys, indians, school football and dirt track racing. If these topics attract you, youll be happy to learn Oklahoma property prices are extremely low. \n\nOklahoma \n\nNative Americans and their culture seriously affect Oklahoma, once called the Indian Territory. That give an original slow paced life to the state with even Oklahoma City experience less busy than most cities. As to the geography, plains make-up much of their state, but rolling hills is found around the northern areas of Tulsa. Lakes is found throughout the state, which provide plenty of opportunities for fishing, climbing and outdoor activities. All and all, Oklahoma supplies a peaceful, cheap move alternative for potential homeowners. \n\nOklahoma City \n\nOklahoma City is typical of the Midwestern city and is the greatest city within the state. The town has seen a revitalization effort, but nevertheless maintains a specific relaxed atmosphere that is unique to their state. To learn additional info, you might require to look at: <a href=\"http://www.roofing-companies.com/\">roofers edmond</a>. Regrettably, Oklahoma City was also the location of the terrorist bombing of the Alfred P. Murrah Federal Building in 1995. Galleries and memorials have been put up in remembrance for that loss of life. \n\nTulsa \n\nTulsa can be an unusual city because of two diverse influences. On one hand, Tulsa includes a pretty amazing art motion involving building structure, museums and art galleries. On the other hand, Tulsa can be an excessively conservative Christian community and is usually regarded as the center of the Bible-belt. Dig up more on a related website by clicking <a href=\"http://www.roofing-companies.com/service.php\">here</a>. Despite these apparent contrasts, everything meshes incredibly well. \n\nOklahoma Real Estate \n\nOklahoma real estate prices are generally on the low-end of national prices. Dig up more on this related article directory by visiting <a href=\"http://www.roofing-companies.com/testimonials.php\">site</a>. An average of a single-family house in Oklahoma City and the suburbs will cost $185,000. The same house will be approximately $145,000 in Tulsa. \n\nWith such low rates, one cant expect to visit a soaring appreciation rate for Oklahoma real-estate. In 2005, property appreciated in a little over five percent.Curb Appeal Contruction\n1050 E. 2nd St. #111\nEdmond, OK 73034\n405-757-4832",
+    "website": "",
+    "triples": "0",
+    "keywords": [],
+    "links": [],
+    "sparql": null
+  },
+  {
+    "id": "midas-heritage",
+    "title": "MIDAS - Heritage project",
+    "description": "From the website:\r\n\r\n> What is MIDAS?\r\n\r\n> MIDAS sets out an agreed list of the items or 'units' of information that should be included in an inventory or other systematic record of the historic environment. These units of information are grouped together under broad headings or 'information schemes'. These cover areas such as Monument Character, Events, People and Organisation etc. It is a 'content' standard or 'metadata' standard for historic environment information. Standards for indexing under each 'unit of information' to assist retrieval of information are contained in the INSCRIPTION standard. See the FISH website for further details of INSCRIPTION.\r\n\r\n> Why is MIDAS important?\r\n\r\n> A vast body of knowledge and understanding of the historic environment is held in a wide variety of 'inventories', maintained by national bodies of record, local authorities, museums, amenity groups, individual and university based researchers. To make the best use of this store of information, especially where these resources are available on the internet, it is important there is a shared understanding of what information should be recorded. MIDAS sets out that shared understanding, based on the experience of many of the key organisations involved in the collection and dissemination of information about the historic environment.\r\n\r\n> How has MIDAS developed?\r\n\r\n> MIDAS developed during 1996-1998 from the work of a committee set up to co-ordinate standards across English national and local inventories. That work is now taken forward under the auspices of FISH, with a view to extending the MIDAS standard to be relevant to other regions in the U.K. and Ireland.\r\n\r\n> A second edition of MIDAS is now planned. You can find out more about current developments on the MIDAS updates page.\r\n\r\n> How should MIDAS be used?\r\n\r\n> MIDAS can be used to plan the content of a new inventory, for example to support a new recording project, or to audit the existing content of an inventory, and identify any useful additional information. MIDAS is designed to be an open standard, that can be applied in a variety of ways to different sorts of inventory records.\r\n\r\n> Who is MIDAS for?\r\n\r\n> MIDAS is intended to be used by a wide variety of heritage projects including:\r\n * Local societies and amenity groups.\r\n * University based research projects or individual studies.\r\n * Professional heritage managers.\r\n * National thematic study groups.\r\n\r\n> What is in MIDAS?\r\n\r\n> MIDAS contains both the standard, and a manual to assist in the application of the standard to a variety of situations, plus worked examples of how the standard can be applied.",
+    "website": "http://www.jiscmail.ac.uk/cgi-bin/filearea.cgi?LMGT1=FISH&a=get&f=/web_midasintro.htm",
+    "triples": "0",
+    "keywords": [
+      "english",
+      "environment",
+      "heritage",
+      "historical",
+      "metadata",
+      "sharing",
+      "standards"
+    ],
+    "links": [],
+    "sparql": null
+  },
+  {
+    "id": "mismuseos-gnoss",
+    "title": "Mis Museos, índice semántico de museos, artistas y obras de arte (GNOSS)",
+    "description": "<p>\r\n<a href=\"http://mismuseos.net/en/community/museos\">MisMuseos.net</a> is a semantic index of artistic resources (museums, artists and artwork) powered by <a href=\"http://gnoss.com/\">GNOSS</a>. MisMuseos.net structures, organizes and offers you, in accordance with the principles promoted by the Linked Data Project, an extensive catalog of works of art that museums publish on the Web. MisMuseos.net connects them with educational recommendations and contexts. <p> The information on public cultural goods comes from data published in the Europeana dataset as RDF (Resource Description Framework), CER.ES Collection (Red Digital de Colecciones de Museos de España) and online public museums collections in Spain not included in CER.ES. MisMuseos.net offers a selection of 8,947 resources (November 2012).</p>\r\n</p>\r\n\r\n<p>\r\nMuseos, Obras de Arte y Artistas componen la colección de <a href=\"http://mismuseos.net/\">MisMuseos.net</a>, el gran índice de recursos artísticos en Internet promovido por \r\n<a href=\"http://gnoss.com/\">GNOSS</a> y destinado al enriquecimiento de la Web Semántica. MisMuseos.net estructura, organiza y pone a tu alcance, de acuerdo con los principios promovidos por el Linked Data Project, un extenso catálogo de las obras de arte que los museos publican en la Red conectándolo con otras bases de conocimiento educativas existentes en la iniciativa Linking Open permitiendo la generación de contextos educativos relacionados con los bienes culturales. </p>\r\n<p> La información sobre bienes culturales públicos procede de los datos publicados en el Europeana dataset como RDF (Resource Description Framework), de la colección CER.ES (Red Digital de Colecciones de Museos de España), y de las colecciones online de los museos públicos de España no incluidos en CER.ES. MisMuseos.net dispone en la actualidad de 8.947 obras de arte (Noviembre 2012)</p>",
+    "website": "http://mismuseos.net/",
+    "triples": "1235894",
+    "keywords": [
+      "artista",
+      "artistas",
+      "catálogo de arte",
+      "catálogo de obras de arte",
+      "catálogo semántico",
+      "colecciones de arte",
+      "colección de arte",
+      "colección de obras de arte",
+      "country-spain",
+      "country.es",
+      "cuadro",
+      "dc",
+      "escuelas artísticas",
+      "escultores",
+      "escultura",
+      "exposiciones",
+      "exposiciones de museos",
+      "foaf",
+      "format-dc",
+      "format-dcam",
+      "format-foaf",
+      "format-rdfg",
+      "format-sioc",
+      "format-skos",
+      "format-wot",
+      "instalaciones",
+      "language-spa",
+      "license-metadata",
+      "lod",
+      "mncars",
+      "museo de bellas artes de bilbao",
+      "museo del prado",
+      "museo nacional centro de arte reina sofía",
+      "museos",
+      "no-proprietary-vocab",
+      "no-vocab-mappings",
+      "obras de arte",
+      "obras de arte por autor",
+      "obras de arte por estilo",
+      "obras de arte por museo",
+      "obras de arte por época",
+      "obras de museos",
+      "pinacoteca",
+      "pinacoteca digital",
+      "pinacoteca virtual",
+      "pintores",
+      "pintura",
+      "provenance-metadata",
+      "published-by-third-party",
+      "recursos artísticos",
+      "schemata",
+      "sioc",
+      "skos",
+      "socialweb",
+      "sp",
+      "spain",
+      "usergeneratedcontent",
+      "wrapper",
+      "índice de obras de arte"
+    ],
+    "links": [
+      {
+        "target": "dbpedia",
+        "value": "1129"
+      },
+      {
+        "target": "didactalia",
+        "value": "44745"
+      },
+      {
+        "target": "freebase",
+        "value": "28715"
+      },
+      {
+        "target": "geonames-semantic-web",
+        "value": "1071"
+      },
+      {
+        "target": "gnoss",
+        "value": "2"
+      },
+      {
+        "target": "museosespania-gnoss",
+        "value": "8949"
+      },
+      {
+        "target": "nytimes-linked-open-data",
+        "value": "59"
+      }
+    ],
+    "sparql": null
+  },
+  {
+    "id": "musei-vaticani",
+    "title": "musei-vaticani",
+    "description": "Immagini e testi\n\n### Diritti sul database\n\nCopyright © 2003-2007 Vatican Museums. Direzione dei Musei. All rights reserved. I contenuti di questo sito sono protetti da copyright. Né il testo, né le immagini possono essere riprodotte, in alcuna forma, senza il permesso della Direzione Musei Vaticani, 00120, Città del Vaticano.",
+    "website": "http://mv.vatican.va/2_IT/pages/MV_Visite.html",
+    "triples": "0",
+    "keywords": [
+      "meta.imported-from.it.ckan.net"
+    ],
+    "links": [],
+    "sparql": null
+  },
+  {
+    "id": "museogalileo",
+    "title": "Museo Galileo database: instruments, books, photographs, documents",
+    "description": "The dataset consists of ca. 300,000 data belonging to the Museo Galileo collective database. It includes the catalogue of the scientific instruments displayed in the Museum, the library catalogue, the database of the archival and photographic materials, the Italian Bibliography of the History of Science and the Galileian Bibliography.",
+    "website": null,
+    "triples": "0",
+    "keywords": [
+      "Bibliografia galileiana",
+      "Bibliografia italiana di storia della scienza",
+      "Galileo Galilei.",
+      "Museo Galileo",
+      "linked open data"
+    ],
+    "links": [],
+    "sparql": null
+  },
+  {
+    "id": "museosespania-gnoss",
+    "title": "Museos de España, colección de museos públicos y privados españoles (GNOSS)",
+    "description": "<p>\r\n<a href=\"http://museos.gnoss.com/en/community/mismuseos\">Museos de España</a>\r\n is a directory that allows facet-based searches on a collection with more than 1,500 dynamic pages of public and private Spanish museums. Museos de España works with \r\n<a href=\"http://gnoss.com/\">GNOSS software (RIAM Intelearning Lab)</a>\r\n</p>\r\n\r\n<p>\r\n<a href=\"http://museos.gnoss.com/comunidad/mismuseos\">Museos de España</a>\r\nes un directorio que permite realizar búsquedas facetadas sobre una colección que reúne las fichas de más de 1.500 museos públicos y privados españoles. Museos de España funciona sobre\r\n<a href=\"http://gnoss.com/\">software de GNOSS (RIAM Intelearning Lab)</a>\r\n</p>",
+    "website": "http://museos.gnoss.com/comunidad/mismuseos/",
+    "triples": "79065",
+    "keywords": [
+      "bellas artes",
+      "ciencias naturales",
+      "country-spain",
+      "country.es",
+      "dc",
+      "escultura",
+      "foaf",
+      "format-dc",
+      "format-dcam",
+      "format-foaf",
+      "format-rdfg",
+      "format-sioc",
+      "format-skos",
+      "format-wot",
+      "language-spa",
+      "license-metadata",
+      "lod",
+      "museos",
+      "no-proprietary-vocab",
+      "no-vocab-mappings",
+      "obras de arte",
+      "pinacoteca",
+      "pintura",
+      "provenance-metadata",
+      "published-by-third-party",
+      "schemata",
+      "sioc",
+      "skos",
+      "socialweb",
+      "sp",
+      "spain",
+      "usergeneratedcontent",
+      "wrapper"
+    ],
+    "links": [
+      {
+        "target": "dbpedia",
+        "value": "140275"
+      },
+      {
+        "target": "freebase",
+        "value": "3309"
+      },
+      {
+        "target": "geonames-semantic-web",
+        "value": "6158"
+      },
+      {
+        "target": "gnoss",
+        "value": "4"
+      },
+      {
+        "target": "mismuseos-gnoss",
+        "value": "7725"
+      },
+      {
+        "target": "nytimes-linked-open-data",
+        "value": "128835"
+      }
+    ],
+    "sparql": null
+  },
+  {
+    "id": "museotorino",
+    "title": "MuseoTorino API",
+    "description": "MuseoTorino is the largest and official dataset of City of Turin (Torino, Italy) heritage assets. \r\nWith this API layer, all the data inside MuseoTorino are accessible to everyone.\r\n\r\nThe city is rappresented as a open-air museum, and its collection is constituited by all tha momuments, historycal and modern builds, churches and all the other city assets.\r\n\r\nAll the data are internally rappresented like a graph, so all the objects are linked to other by arguments, categories and semantic concepts in general.",
+    "website": "http://www.museotorino.it/api",
+    "triples": "0",
+    "keywords": [
+      "21style",
+      "heritage",
+      "museotorino",
+      "opendatachallenge",
+      "torino"
+    ],
+    "links": [],
+    "sparql": null
+  },
+  {
+    "id": "museums-and-galleries-events-and-exhibitions",
+    "title": "Museums and galleries events and exhibitions",
+    "description": "<blockquote>\r\n<p>Find out what's going on and when at the various museums, halls and houses around Leeds.</p>\r\n</blockquote>",
+    "website": null,
+    "triples": "0",
+    "keywords": [
+      "abbey house",
+      "art",
+      "cd",
+      "culture",
+      "gallery",
+      "kirkstall abbey",
+      "leeds art gallery",
+      "leeds discovery centre",
+      "leeds industrial museum at armley mills",
+      "lotherton hall",
+      "museum",
+      "museums",
+      "temple newsam",
+      "thwaite mills"
+    ],
+    "links": [],
+    "sparql": null
+  },
+  {
+    "id": "museums-in-italy",
+    "title": "Italian Museums",
+    "description": "List of geo-referenced italian museums. Places are linked to Geonames. Museum categories are linked to dbpedia.\r\nMore info at [http://www.linkedopendata.it/datasets/musei](http://www.linkedopendata.it/datasets/musei)",
+    "website": "http://www.linkedopendata.it/datasets/musei",
+    "triples": "49897",
+    "keywords": [
+      "country-italy",
+      "crossdomain",
+      "deref-vocab",
+      "format-rdf",
+      "format-vcard",
+      "license-metadata",
+      "linked-open-data",
+      "linkeddata",
+      "lod",
+      "lodcloud-diagram-2011-09-19",
+      "media",
+      "museum",
+      "provenance-metadata",
+      "published-by-producer",
+      "rdf",
+      "void-sparql-endpoint"
+    ],
+    "links": [
+      {
+        "target": "dbpedia",
+        "value": "2894"
+      },
+      {
+        "target": "geonames-semantic-web",
+        "value": "1570"
+      }
+    ],
+    "sparql": null
+  },
+  {
+    "id": "museums-loans",
+    "title": "Museums loans",
+    "description": "<blockquote>\r\n<p>Datasets showing loans out to other museums across the UK and around the world from Leeds.</p>\r\n<h2>Please note</h2>\r\n<ul>\r\n<li>It is acknowledged that this information is not in the best format and work will be carried out to improve this.</li>\r\n</ul>\r\n</blockquote>",
+    "website": null,
+    "triples": "0",
+    "keywords": [
+      "cd",
+      "loans",
+      "museum"
+    ],
+    "links": [],
+    "sparql": null
+  },
+  {
+    "id": "national-gallery-of-denmark",
+    "title": "SMK (Statens Museum for Kunst), The National Gallery of Denmark",
+    "description": "Collection of 159 high res images",
+    "website": "",
+    "triples": "0",
+    "keywords": [],
+    "links": [],
+    "sparql": null
+  },
+  {
+    "id": "national-indicators-9-10-11-baselines",
+    "title": "National indicators 9, 10 and 11: baselines for local authorities",
+    "description": "\"NI 9 Use of public libraries\r\n NI 10 Visits to museums and galleries\r\n NI 11 Engagement in the arts\"",
+    "website": "http://webarchive.nationalarchives.gov.uk/+/http://www.culture.gov.uk/reference_library/publications/6233.aspx",
+    "triples": "0",
+    "keywords": [
+      "culture",
+      "engagement",
+      "public",
+      "uk"
+    ],
+    "links": [],
+    "sparql": null
+  },
+  {
+    "id": "nmsi",
+    "title": "nmsi",
+    "description": "CSV collections data from the UK Science Museum, National Media Museum, and National Railway Museum.",
+    "website": "http://api.sciencemuseum.org.uk/documentation/collections/",
+    "triples": "0",
+    "keywords": [
+      "collection",
+      "csv",
+      "format-csv",
+      "museum"
+    ],
+    "links": [],
+    "sparql": null
+  },
+  {
+    "id": "perseus",
+    "title": "Perseus Digital Library",
+    "description": "### Description\r\n\r\nStarted in 1987 focusing on classics but has now expanded to other areas. Though containing a large amount of material site itself is focused on being a digital library (i.e. presenting and curating materials) and hence is human rather than machine access oriented.\r\n\r\nContains:\r\n\r\n  * Greek and Roman Materials - Primary and secondary sources for the study of ancient Greece and Rome\r\n  * Art & Archaeology Artifact Browser - Look through a massive library of art objects, sites, and buildings. The library's catalogs document 1305 coins, 1909 vases, 2003 sculptures, 179 sites, 140 gems, and 424 buildings. Each catalog entry has a description of the object and its context; most have images. Descriptions and images have been produced in collaboration with many museums, institutions, and scholars. Catalog information and keywords have been taken from standard sources, which are cited in the entries for each object.\r\n  * Arabic Materials - Arabic language documents\r\n  * Germanic Materials - Materials for the study of the Germanic Peoples\r\n  * 19th-Century American - Sources on the history of the 19th-century United States.\r\n  * Renaissance Materials - Primary and secondary sources in early modern English literature\r\n  * Richmond Times Dispatch - Issues of the Richmond Times Dispatch.\r\n  * Duke Databank of Documentary Papyri - Non-literary papyri, Greek and Latin, from the Ptolemaic and Roman periods\r\n\r\n\r\n### Openness: ?\r\n\r\n<http://www.perseus.tufts.edu/hopper/help/copyright> states (emphasis added):\r\n\r\n> The Trustees of Tufts College hold the overall copyright to the Perseus Digital Library; the materials therein (including all texts, translations, images, descriptions, drawings, etc.) are provided for the personal use of students, scholars, and the public. **Any commercial use or publication without authorization is strictly prohibited.** Materials within the Perseus DL have varying copyright statues: please contact the project for more information about a specific component or object. Copyright is protected by the copyright laws of the United States and the Universal Copyright Convention.\r\n\r\nSome individual items have specific licenses (often CC) but from a quick look around these appear to be, as often as not, non-OKD compliant (with non-commercial or no-derivatives restrictions).",
+    "website": "http://www.perseus.tufts.edu/",
+    "triples": "0",
+    "keywords": [
+      "access-www",
+      "arabic",
+      "archaeology",
+      "classical",
+      "classics",
+      "german",
+      "greek",
+      "language",
+      "latin",
+      "todo-list-datasets",
+      "todo-split-up"
+    ],
+    "links": [],
+    "sparql": null
+  },
+  {
+    "id": "powerhouse-museum-collection",
+    "title": "Powerhouse Museum Collection | data.australia.gov.au – beta",
+    "description": "A database of over 70,000 objects in The PowerHouse Museum in Australia.",
+    "website": "http://data.australia.gov.au/102",
+    "triples": "0",
+    "keywords": [
+      "artifacts",
+      "city-sydney",
+      "collection",
+      "country-australia",
+      "metadata",
+      "museum",
+      "objects"
+    ],
+    "links": [],
+    "sparql": null
+  },
+  {
+    "id": "radatana",
+    "title": "Rådata nå!",
+    "description": "This is an RDF representation of the personal name authorities in the BIBSYS authority file, the dataset was created with funding from the Norwegian Archive, Library and Museum Authority (ABM-utvikling) by BIBSYS and NTNU University Library.\r\n\r\nSee also [http://brinxmat.posterous.com/bibsys-personal-name-linked-open-data-publish](http://brinxmat.posterous.com/bibsys-personal-name-linked-open-data-publish).",
+    "website": "http://data.bibsys.no/data",
+    "triples": "9370074",
+    "keywords": [
+      "authorities",
+      "bibliographic",
+      "deref-vocab",
+      "format-dc",
+      "format-foaf",
+      "format-owl",
+      "format-radatana",
+      "format-rdf",
+      "format-rdfs",
+      "format-skos",
+      "format-whois",
+      "format-xsd",
+      "linked-data",
+      "linked-open-data",
+      "linkeddata",
+      "lld",
+      "lod",
+      "no-license-metadata",
+      "no-provenance-metadata",
+      "no-vocab-mappings",
+      "norwegian",
+      "persons",
+      "publications",
+      "published-by-producer"
+    ],
+    "links": [
+      {
+        "target": "dbpedia",
+        "value": "30346"
+      },
+      {
+        "target": "dnb-gemeinsame-normdatei",
+        "value": "209681"
+      },
+      {
+        "target": "viaf",
+        "value": "311154"
+      }
+    ],
+    "sparql": null
+  },
+  {
+    "id": "randomnessguidelondon",
+    "title": "RandomnessGuideLondon",
+    "description": "It's a kind of database, kind of review site, used for documenting interesting places in London. Our major obsessions are pubs, restaurants, cafes, bookshops, and museums. We're also quite interested in places that are vegan-friendly and/or accessible.\r\n\r\nWe collect structured data on everything we include in the guide, so if you want to find a sushi restaurant near a cinema, just use our category search. Or if you want to find a Good Beer Guide pub within 500m of Victoria Station, just look here.\r\n\r\nThis is not, and never will be, a commercial guide. We don't accept advertising or freebies, and all reviews are written by our team of contributors. Major changes and additions to the site will always be viewable on the News page, and our Statistics page gives an overview of how active the site has been recently.",
+    "website": "http://london.randomness.org.uk",
+    "triples": "0",
+    "keywords": [
+      "LinkedDataCrawl2014",
+      "crawledLinkedDataCloud2014",
+      "format-dcterm",
+      "format-foaf",
+      "format-owl",
+      "format-pos",
+      "format-rdf",
+      "format-w3con",
+      "geographic",
+      "lodcloud-diagram-2014-08-30",
+      "non-deref-vocab",
+      "provenance-metadata"
+    ],
+    "links": [],
+    "sparql": null
+  },
+  {
+    "id": "rijksmuseum",
+    "title": "Rijksmuseum Collection Data",
+    "description": "The Rijksmuseum Amsterdam collection as Open Linked Data, modelled according the Europeana Data Model.",
+    "website": null,
+    "triples": "0",
+    "keywords": [
+      "cultural-heritage",
+      "edm",
+      "image-collection",
+      "linked data",
+      "museums",
+      "open data",
+      "rijksmuseum"
+    ],
+    "links": [],
+    "sparql": {
+      "title": "Rijksmuseum SPARQL Endpoint",
+      "description": "SPARQL Endpoint",
+      "access_url": "http://rijksmuseum.dydra.com/lizzyjongma/rijksmuseum-collection/sparql",
+      "status": "active"
+    }
+  },
+  {
+    "id": "rijksmuseum-api",
+    "title": "Rijksmuseum API",
+    "description": "The Rijksmuseum Application Programming Interface (API) is a Rijksmuseum service for partners and application developers. Register for an API key for access to structural metadata and images of the Rijksmuseum’s collection, which can then be used to develop applications or simply to enrich your collection.",
+    "website": "http://www.rijksmuseum.nl/api",
+    "triples": "0",
+    "keywords": [
+      "culturalheritage"
+    ],
+    "links": [],
+    "sparql": null
+  },
+  {
+    "id": "rpc-coin",
+    "title": "Roman Provincial Coinage (RPC) Online: Coin database",
+    "description": "From [home page](http://rpc.ashmus.ox.ac.uk/):\r\n\r\n> The aim of the Roman Provincial Coinage series is to produce a standard typology of the provincial coinage of the Roman Empire from its beginning in 44 BC to its end in AD 296/7. The current Roman Provincial Coinage Online project is confined to the Antonine period (AD 138–192), but it is intended that it will form a model for putting other periods online in the future.\r\n>\r\n> The database is based on the ten most important and accessible collections in the world, and on all published material. It comprises one of the largest collections of images and related inscriptions from the ancient world which is searchable by iconography, place, and time.\r\n>\r\n> The database contains information on 13,729 coin types, based on 46,725 specimens (9,061 of which have images).\r\n\r\n### Openness: NOT OPEN\r\n\r\nUse and reuse limited to education. From <http://rpc.ashmus.ox.ac.uk/copyright/> (emphasis added):\r\n\r\n> The Ashmolean Museum (University of Oxford) holds the copyright in the Roman Provincial Coinage Online website.\r\n>\r\n> Educational institutions may reproduce and distribute material from the website for educational use, provided that:\r\n>\r\n>    1. the source of the material is identified, and\r\n>    2. this copyright notice appears on any copies made.\r\n>\r\n> Except as provided above, material from the website may **not be reproduced, distributed, or published in any form without permission of the Ashmolean Museum**.\r\n>\r\n> If there are any other copyright holders, their permission must also be obtained. The Ashmolean Museum will give permission to reproduce images only on condition that permission is also obtained from the owner of the object.\r\n",
+    "website": "http://rpc.ashmus.ox.ac.uk/coins/",
+    "triples": "0",
+    "keywords": [
+      "access-www",
+      "coin",
+      "numismatics",
+      "roman",
+      "size-medium"
+    ],
+    "links": [],
+    "sparql": null
+  },
+  {
+    "id": "rsoc-pt",
+    "title": "Papers from Philosophical Transactions of the Royal Society",
+    "description": "-----BEGIN PGP SIGNED MESSAGE-----\r\nHash: SHA1\r\n\r\n  This archive contains 18,592 scientific publications totaling\r\n33GiB, all from Philosophical Transactions of the Royal Society\r\nand which should be  available to everyone at no cost, but most\r\nhave previously only been made available at high prices through\r\npaywall gatekeepers like JSTOR.\r\n\r\nLimited access to the  documents here is typically sold for $19\r\nUSD per article, though some of the older ones are available as\r\ncheaply as $8. Purchasing access to this collection one article\r\nat a time would cost hundreds of thousands of dollars.\r\n\r\nAlso included is the basic factual metadata allowing you to\r\nlocate works by title, author, or publication date, and a\r\nchecksum file to allow you to check for corruption.\r\n\r\nef8c02959e947d7f4e4699f399ade838431692d972661f145b782c2fa3ebcc6a sha256sum.txt\r\n\r\nI've had these files for a long time, but I've been afraid that if I\r\npublished them I would be subject to unjust legal harassment by those who\r\nprofit from controlling access to these works.\r\n\r\nI now feel that I've been making the wrong decision.\r\n\r\nOn July 19th 2011, Aaron Swartz was criminally charged by the US Attorney\r\nGeneral's office for, effectively, downloading too many academic papers\r\nfrom JSTOR.\r\n\r\nAcademic publishing is an odd systemΓΓé¼ΓÇ¥the authors are not paid for their\r\nwriting, nor are the peer reviewers (they're just more unpaid academics),\r\nand in some fields even the journal editors are unpaid. Sometimes the\r\nauthors must even pay the publishers.\r\n\r\nAnd yet scientific publications are some of the most outrageously\r\nexpensive pieces of literature you can buy. In the past, the high access\r\nfees supported the costly mechanical reproduction of niche paper journals,\r\nbut online distribution has mostly made this function obsolete.\r\n\r\nAs far as I can tell, the money paid for access today serves little\r\nsignificant purpose except to perpetuate dead business models. The\r\n\"publish or perish\" pressure in academia gives the authors an impossibly\r\nweak negotiating position, and the existing system has enormous inertia.\r\n\r\nThose with the most power to change the system--the long-tenured luminary\r\nscholars whose works give legitimacy and prestige to the journals, rather\r\nthan the other way around--are the least impacted by its failures. They\r\nare supported by institutions who invisibly provide access to all of the\r\nresources they need. And as the journals depend on them, they may ask\r\nfor alterations to the standard contract without risking their career on\r\nthe loss of a publication offer. Many don't even realize the extent to\r\nwhich academic work is inaccessible to the general public, nor do they\r\nrealize what sort of work is being done outside universities that would\r\nbenefit by it.\r\n\r\nLarge publishers are now able to purchase the political clout needed\r\nto abuse the narrow commercial scope of copyright protection, extending\r\nit to completely inapplicable areas: slavish reproductions of historic\r\ndocuments and art, for example, and exploiting the labors of unpaid\r\nscientists. They're even able to make the taxpayers pay for their\r\nattacks on free society by pursuing criminal prosecution (copyright has\r\nclassically been a civil matter) and by burdening public institutions\r\nwith outrageous subscription fees.\r\n\r\nCopyright is a legal fiction representing a narrow compromise: we give\r\nup some of our natural right to exchange information in exchange for\r\ncreating an economic incentive to author, so that we may all enjoy more\r\nworks. When publishers abuse the system to prop up their existence,\r\nwhen they misrepresent the extent of copyright coverage, when they use\r\nthreats of frivolous litigation to suppress the dissemination of publicly\r\nowned works, they are stealing from everyone else.\r\n\r\nSeveral years ago I came into possession, through rather boring and\r\nlawful means, of a large collection of JSTOR documents.\r\n\r\nThese particular documents are the historic back archives of the\r\nPhilosophical Transactions of the Royal SocietyΓΓé¼ΓÇ¥a prestigious scientific\r\njournal with a history extending back to the 1600s.\r\n\r\nThe portion of the collection included in this archive, ones published\r\nprior to 1923 and therefore obviously in the public domain, total some\r\n18,592 papers and 33 gigabytes of data.\r\n\r\nThe documents are part of the shared heritage of all mankind,\r\nand are rightfully in the public domain, but they are not available\r\nfreely. Instead the articles are available at $19 each--for one month's\r\nviewing, by one person, on one computer. It's a steal. From you.\r\n\r\nWhen I received these documents I had grand plans of uploading them to\r\nWikipedia's sister site for reference works, WikisourceΓΓé¼ΓÇ¥ where they\r\ncould be tightly interlinked with Wikipedia, providing interesting\r\nhistorical context to the encyclopedia articles. For example, Uranus\r\nwas discovered in 1781 by William Herschel; why not take a look at\r\nthe paper where he originally disclosed his discovery? (Or one of the\r\nseveral follow on publications about its satellites, or the dozens of\r\nother papers he authored?)\r\n\r\nBut I soon found the reality of the situation to be less than appealing:\r\npublishing the documents freely was likely to bring frivolous litigation\r\nfrom the publishers.\r\n\r\nAs in many other cases, I could expect them to claim that their slavish\r\nreproductionΓΓé¼ΓÇ¥scanning the documentsΓΓé¼ΓÇ¥ created a new copyright\r\ninterest. Or that distributing the documents complete with the trivial\r\nwatermarks they added constituted unlawful copying of that mark. They\r\nmight even pursue strawman criminal charges claiming that whoever obtained\r\nthe files must have violated some kind of anti-hacking laws.\r\n\r\nIn my discreet inquiry, I was unable to find anyone willing to cover\r\nthe potentially unbounded legal costs I risked, even though the only\r\nunlawful action here is the fraudulent misuse of copyright by JSTOR and\r\nthe Royal Society to withhold access from the public to that which is\r\nlegally and morally everyone's property.\r\n\r\nIn the meantime, and to great fanfare as part of their 350th anniversary,\r\nthe RSOL opened up \"free\" access to their historic archivesΓΓé¼ΓÇ¥but \"free\"\r\nonly meant \"with many odious terms\", and access was limited to about\r\n100 articles.\r\n\r\nAll too often journals, galleries, and museums are becoming not\r\ndisseminators of knowledgeΓΓé¼ΓÇ¥as their lofty mission statements\r\nsuggestΓΓé¼ΓÇ¥but censors of knowledge, because censoring is the one thing\r\nthey do better than the Internet does. Stewardship and curation are\r\nvaluable functions, but their value is negative when there is only one\r\nsteward and one curator, whose judgment reigns supreme as the final word\r\non what everyone else sees and knows. If their recommendations have value\r\nthey can be heeded without the coercive abuse of copyright to silence \r\ncompetition.\r\n\r\nThe liberal dissemination of knowledge is essential to scientific\r\ninquiry. More than in any other area, the application of restrictive\r\ncopyright is inappropriate for academic works: there is no sticky question\r\nof how to pay authors or reviewers, as the publishers are already not\r\npaying them. And unlike 'mere' works of entertainment, liberal access\r\nto scientific work impacts the well-being of all mankind. Our continued\r\nsurvival may even depend on it.\r\n\r\nIf I can remove even one dollar of ill-gained income from a poisonous\r\nindustry which acts to suppress scientific and historic understanding,\r\nthen whatever personal cost I suffer will be justifiedΓΓé¼ΓÇ¥it will be one\r\nless dollar spent in the war against knowledge. One less dollar spent\r\nlobbying for laws that make downloading too many scientific papers\r\na crime.\r\n\r\nI had considered releasing this collection anonymously, but others pointed\r\nout that the obviously overzealous prosecutors of Aaron Swartz would\r\nprobably accuse him of it and add it to their growing list of ridiculous\r\ncharges. This didn't sit well with my conscience, and I generally believe\r\nthat anything worth doing is worth attaching your name to.\r\n\r\nI'm interested in hearing about any enjoyable discoveries or even useful\r\napplications which come of this archive.\r\n\r\n- ---- \r\nGreg Maxwell - July 20th 2011\r\ngmaxwell@gmail.com  Bitcoin: 14csFEJHk3SYbkBmajyJ3ktpsd2TmwDEBb\r\n\r\n-----BEGIN PGP SIGNATURE-----\r\nVersion: GnuPG v1.4.11 (GNU/Linux)\r\n\r\niEYEARECAAYFAk4nlfwACgkQrIWTYrBBO/pK4QCfV/voN6IdZRU36Vy3xAedUMfz\r\nrJcAoNF4/QTdxYscvF2nklJdMzXFDwtF\r\n=YlVR\r\n-----END PGP SIGNATURE-----\r\n",
+    "website": "http://thepiratebay.org/torrent/6554331/Papers_from_Philosophical_Transactions_of_the_Royal_Society__fro",
+    "triples": "0",
+    "keywords": [
+      "bibliographic"
+    ],
+    "links": [],
+    "sparql": null
+  },
+  {
+    "id": "russian-wikivoyage-listings",
+    "title": "Russian Wikivoyage Listings",
+    "description": "A selection of the most traveller-friendly museums, attractions, restaurants, hotels, for each destination of the globe, in Russian.",
+    "website": null,
+    "triples": "0",
+    "keywords": [],
+    "links": [],
+    "sparql": null
+  },
+  {
+    "id": "swedish-open-cultural-heritage",
+    "title": "Swedish Open Cultural Heritage",
+    "description": "SOCH is a set of 3.4 million (as of december 2010) cultural heritage objects harvested from a large number of museums and other local, regional and national cultural heritage organizations.\r\n\r\nDifferent Creative Commons licenses are used for different datasets in SOCH. The main goal is to provide as open licenses as possible.",
+    "website": "http://www.ksamsok.se/in-english/",
+    "triples": "3400000",
+    "keywords": [
+      "cultural",
+      "cultural-institutions",
+      "culturalheritage",
+      "format-dc",
+      "linked-open-data",
+      "lod",
+      "lodcloud.nolinks",
+      "no-deref-vocab",
+      "openaccess",
+      "publications",
+      "published-by-producer"
+    ],
+    "links": [],
+    "sparql": null
+  },
+  {
+    "id": "taxref-ld",
+    "title": "TAXREF-LD: Linked Data French Taxonomic Register",
+    "description": "TAXREF-LD is the Linked Data representation of TAXREF (https://inpn.mnhn.fr/programme/referentiel-taxonomique-taxref?lg=en), the French national taxonomical register for fauna, flora and fungus, that covers mainland France and overseas territories. It accounts for over 500000 scientific names.\r\n\r\nTAXREF-LD is a joint initiative of the National Museum of Natural History (http://www.mnhn.fr/) and the I3S laboratory (http://www.i3s.unice.fr/) (Université Côte d'Azur, CNRS, Inria). Its model is described in [1].\r\n\r\n[1] Michel F., Gargominy O., Tercerie S. & Faron-Zucker C. (2017). A Model to Represent Nomenclatural and Taxonomic Information as Linked Data. Application to the French Taxonomic Register, TAXREF. In _Proceedings of the 2nd International Workshop on Semantics for Biodiversity (S4BioDiv) co-located with ISWC 2017_ vol. 1933. Vienna, Austria. CEUR.",
+    "website": "https://inpn.mnhn.fr/programme/referentiel-taxonomique-taxref?lg=en",
+    "triples": "26773706",
+    "keywords": [
+      "biodiversity",
+      "deref-vocab",
+      "fauna",
+      "flora",
+      "format-dc",
+      "format-dwc",
+      "format-foaf",
+      "format-geonames",
+      "format-geospecies",
+      "format-ncbitaxon",
+      "format-rdf",
+      "format-rdfs",
+      "format-skos",
+      "format-txn",
+      "license-metadata",
+      "lifesciences",
+      "lod",
+      "provenance-metadata",
+      "published-by-third-party",
+      "schemata",
+      "species",
+      "taxonomy",
+      "vocab-mappings"
+    ],
+    "links": [
+      {
+        "target": "agrovoc-skos",
+        "value": "4244"
+      },
+      {
+        "target": "bioportal-envo",
+        "value": "5"
+      },
+      {
+        "target": "bioportal-ncbitaxon",
+        "value": "89484"
+      },
+      {
+        "target": "geonames",
+        "value": "15"
+      },
+      {
+        "target": "geospecies",
+        "value": "4272"
+      },
+      {
+        "target": "taxonconcept",
+        "value": "20000"
+      }
+    ],
+    "sparql": {
+      "title": "SPARQL endpoint",
+      "description": "SPARQL endpoint",
+      "access_url": "http://taxref.mnhn.fr/sparql",
+      "status": "active"
+    }
+  },
+  {
+    "id": "the-kazan-university-museum-as-linked-open-data-in-the-europeana-data-model",
+    "title": "The Kazan University Museum as Linked Open Data in the Europeana Data Model",
+    "description": "The Kazan University Museum dataset describes more than 10.000 cultural heritage objects related to the history of Kazan University described by the museum.",
+    "website": null,
+    "triples": "0",
+    "keywords": [
+      "edm",
+      "linked data",
+      "lod",
+      "museum"
+    ],
+    "links": [],
+    "sparql": null
+  },
+  {
+    "id": "thesaurus-bncf",
+    "title": "Thesaurus BNCF",
+    "description": "Nuovo soggettario (NS), edited by the National Central Library of Florence, is the Italian subject indexing tool for various types of resources. It has been developed in compliance with the IFLA recommendations, and other international standards in the field of subject indexing. This tool has been created for general and specialized Italian libraries, and for museums, multimedia libraries, archives and documentation centres. The main component of the NS is a general thesaurus available on the web since 2007 (http://thes.bncf.firenze.sbn.it/ricerca.php). The thesaurus comprises nowadays approximately 52400 terms and it is updated on a regular basis. ",
+    "website": "",
+    "triples": "0",
+    "keywords": [
+      "Italian generalistic thesaurus",
+      "format-skos",
+      "format-skosxl",
+      "lod",
+      "publications"
+    ],
+    "links": [],
+    "sparql": {
+      "title": "endpoint SPARQL",
+      "description": "Last update: March 2016",
+      "access_url": "http://digitale.bncf.firenze.sbn.it/openrdf-workbench/repositories/NS/query",
+      "status": "active"
+    }
+  },
+  {
+    "id": "twam_imagine",
+    "title": "Tyne and Wear Museums Collections (Imagine)",
+    "description": "Part of the Europeana Linked Open Data, this is a collection of metadata describing (and linking to digital copies where appropriate) items in the Tyne and Wear Museums Collections.",
+    "website": "http://www.imagine.org.uk/",
+    "triples": "0",
+    "keywords": [
+      "edm",
+      "europeana",
+      "museum"
+    ],
+    "links": [],
+    "sparql": null
+  },
+  {
+    "id": "use-public-libraries-visits-museums-and-galleries-and-engagement-arts",
+    "title": "Use of public libraries, Visits to museums and galleries, and Engagement in the arts",
+    "description": "<p>Use of public libraries, Visits to museums and galleries and Engagement in the arts.\n</p>\n<p>This workbook contains baselines for NI9, 10 and 11 for all upper-tier local authorities. Percentage is weighted. This is the best estimate of adult usage/participation in the local authority, and forms the baseline against which progress will be measured. All survey data contain a margin of error; this is also known as the confidence interval, which is presented as a range around an estimate. For this report the range has been calculated using a 95% confidence interval, which means there is a 95% probability the true percentage lies in the range given. The best estimate available is the mid-point. Assuming a normal distribution, the actual figure is most likely to be around the mid-point but it could be at either end of the range.\n</p>\n<p>A number of factors will affect the level of change required in order for the survey to register a statistically significant change. One of these is the number of interviews conducted – the greater the size the more sensitive it is to detecting change. Another factor is the baseline percentage, with those nearer to 50 per cent requiring more change to occur. The ‘minimum detectable change’ takes these factors into account to indicate the minimum percentage point change required between the baseline estimate and the final estimate to record a statistically significant  increase in usage/participation. This calculation assumes that the number of interviews conducted in the assessment year is not less than in the baseline year.<br />\n<br />\n<br />\n\n</p>\n<p>Libaries (used for NI9) measures the percentage of adults in a LA who have used a public library service in the past 12 months. Use is for leisure purposes, including informal learning and studying or research for personal interests.\n</p>\n<p>Museums and Galleries (used for NI10) measures the percentage of adults in a LA who have visited a museum or gallery in the past 12 months. Visits are for leisure purposes, including informal learning and studying or research for personal interests. Online access to collections and outreach services are not counted.<br />\n\n</p>\n<p>Arts (used for NI11) measures the percentage of adults in a LA who have either attended an arts event or participated in an arts activity at least three times in the past 12 months. Engagement must be for leisure purposes.\n</p>",
+    "website": null,
+    "triples": "0",
+    "keywords": [
+      "active",
+      "art",
+      "culture",
+      "galleries",
+      "libraries",
+      "museums",
+      "survey"
+    ],
+    "links": [],
+    "sparql": null
+  },
+  {
+    "id": "vanda-api",
+    "title": "Victoria & Albert Museum Collection Records",
+    "description": "A REST API to search the V&A's collection.\r\n\r\nSadly restricted to academic and noncommercial use.\r\n\r\nSearch for items by keyword, artist/maker, collection, year, material/technique, geography.\r\n\r\nReturns record and images plus thumbnails.",
+    "website": "http://www.vam.ac.uk/api",
+    "triples": "0",
+    "keywords": [
+      "access-api",
+      "art",
+      "art-history",
+      "collection",
+      "images",
+      "license-noncommercial",
+      "museum",
+      "victoria-and-albert"
+    ],
+    "links": [],
+    "sparql": null
+  },
+  {
+    "id": "viaf",
+    "title": "VIAF: The Virtual International Authority File",
+    "description": "VIAF (Virtual International Autority File) is an OCLC dataset and service -- built in cooperation with national libraries and other partners -- that virtually combines multiple LAM (Library Archives Museum) name authority files into a single name authority service. Put simply it is a large database of people and organizations that occur in library catalogs.\r\n\r\n\r\nVIAF is a joint project of 20  national libraries, implemented and hosted by OCLC. The project's goal is to lower the cost and increase the utility of library authority files by matching and linking the authority files of national libraries, and then making that information available on the Web.\r\n\r\n### Openness\r\n\r\nThe data is released under Open Data Commons Attribution license. Attribution is requested as follows:\r\n\r\n> Adherence to ODC Attribution instructions for the correct assertion of attribution is encouraged. The preferred form of attribution for VIAF is:\r\n>\r\n> \"This [title of report or article or dataset] contains information from VIAF (Virtual International Authority File) which is made available under the ODC Attribution License.\"\r\n> \r\n> Special cases: In circumstances where providing the full attribution statement above is not technically feasible, the use of canonical VIAF URIs is adequate to satisfy Section 4.3 of the ODC Attribution License.\r\n\r\n#### Older information preserved for archival purposes\r\n\r\nOCLC is currently in discussion with partners about how to license material. [Message from Thom Hickey, OCLC Chief Scientist](http://groups.google.com/group/nyt_linked_open_data/browse_thread/thread/46ea00276e3d5a2e#) on public Google Groups mailing list in January 2010 states:\r\n\r\n> VIAF is a joint project with the contributing institutions and OCLC doesn?t claim any rights to the data beyond what the group has.  Unfortunately the group as a whole has problems coming up with a statement of exactly what is permitted.  In lieu of that, our position is that the data on the site is freely available for use through the APIs, although if someone wants a copy of the whole thing they would have to apply to the VIAF consortium (they could do that through me or Barbara Tillett at LC).  Along those same lines, if someone is going to have substantial activity against VIAF (multiple queries/second) we?d like to know about it ahead of time. \r\n\r\n> Over the next few months we will be working on a better statement of what?s permitted, but our intention is to make the data as freely available as possible (even to the NYT). \r\n\r\n\r\nFurther update from Thom Hickey:\r\n(http://outgoing.typepad.com/outgoing/2011/03/use-of-viaf.html)\r\n\r\n> I responded to a recent blog post on LibraryThing which mentioned restrictions on the use of VIAF and its relationship to the LC authority file.\r\n\r\n> In fact, VIAF is open for use by anyone.  Here's what I said about the use of VIAF:\r\n\r\n> VIAF is a project led by LC, the French and German national libraries and OCLC. There are no restrictions on its use. Dumps of the complete file are available, but need the approval of the project leaders.\r\n\r\n> VIAF is not designed to replace the LC/NACO authority file, but rather is built from it and a number of similar files.\r\n\r\n> I hope that is clear.  We really do want people to use VIAF!\r\n\r\nGood news, but no explicit license or complete dumps freely available without asking, so not (yet) OKD compliant ",
+    "website": "http://viaf.org/viaf/data/",
+    "triples": "200000000",
+    "keywords": [
+      "bibliographic",
+      "format-owl",
+      "format-rdf",
+      "format-skos",
+      "library",
+      "lld",
+      "lod",
+      "lodcloud-diagram-2011-09-19",
+      "lodcloud-diagram-2014-08-30",
+      "no-deref-vocab",
+      "no-license-metadata",
+      "no-provenance-metadata",
+      "no-vocab-mappings",
+      "publications",
+      "published-by-producer"
+    ],
+    "links": [
+      {
+        "target": "dbpedia",
+        "value": "10000"
+      },
+      {
+        "target": "dnb-gemeinsame-normdatei",
+        "value": "4000000"
+      }
+    ],
+    "sparql": null
+  },
+  {
+    "id": "who-s-who-in-leeds",
+    "title": "Who's Who in Leeds",
+    "description": "<blockquote>\r\n<p>A dataset showing the movers and shakers in Leeds both past and present. This information is used by the council to populate an interactive museum resource.</p>\r\n<h2>Please note</h2>\r\n<ul>\r\n<li>There are parts of this dataset which are missing.</li>\r\n<li>This is a one-off dataset.</li>\r\n</ul>\r\n</blockquote>",
+    "website": null,
+    "triples": "0",
+    "keywords": [
+      "cd",
+      "culture",
+      "famous people",
+      "history",
+      "leeds",
+      "sport"
+    ],
+    "links": [],
+    "sparql": null
+  },
+  {
+    "id": "wikivoyage-listings-as-csv",
+    "title": "Wikivoyage listings as CSV",
+    "description": "A selection of the most traveller-friendly museums, attractions, restaurants, hotels, for each destination of the globe.\r\nData can be edited wiki-style at https://en.wikivoyage.org",
+    "website": null,
+    "triples": "0",
+    "keywords": [
+      "attractions",
+      "hotels",
+      "museum",
+      "restaurants",
+      "travel-guides"
+    ],
+    "links": [],
+    "sparql": null
+  },
+  {
+    "id": "wikivoyage-listings-as-obf",
+    "title": "Wikivoyage listings as OBF",
+    "description": "A selection of the most traveller-friendly museums, attractions, restaurants, hotels, for each destination of the globe.\r\nData can be edited wiki-style at https://en.wikivoyage.org",
+    "website": null,
+    "triples": "0",
+    "keywords": [
+      "attractions",
+      "hotels",
+      "restaurants",
+      "tourism",
+      "travel-guide"
+    ],
+    "links": [],
+    "sparql": null
+  },
+  {
+    "id": "wikivoyage-listings-as-osm",
+    "title": "Wikivoyage listings as OSM",
+    "description": "A selection of the most traveller-friendly museums, attractions, restaurants, hotels, for each destination of the globe.\r\nData can be edited wiki-style at https://en.wikivoyage.org",
+    "website": null,
+    "triples": "0",
+    "keywords": [
+      "attractions",
+      "hotels",
+      "museums",
+      "restaurants",
+      "travel-guide"
+    ],
+    "links": [],
+    "sparql": null
+  },
+  {
+    "id": "ww1lod",
+    "title": "World War 1 as Linked Open Data",
+    "description": "This dataset contains strictly quality-controlled rich information on events, actors and places related to the First World War. As such, it is meant to be used as a reference dataset to which other datasets (e.g. museum or library collections dealing with WW1 topics) can be linked.",
+    "website": null,
+    "triples": "40160",
+    "keywords": [
+      "culturalheritage",
+      "deref-vocab",
+      "format-cidoc-crm",
+      "format-foaf",
+      "format-geo",
+      "format-georss",
+      "format-org",
+      "format-rdf",
+      "format-schema",
+      "format-skos",
+      "history",
+      "lod",
+      "world-war-one"
+    ],
+    "links": [
+      {
+        "target": "dbpedia",
+        "value": "152"
+      },
+      {
+        "target": "geonames-semantic-web",
+        "value": "1248"
+      },
+      {
+        "target": "muninn",
+        "value": "11"
+      },
+      {
+        "target": "pcdhn",
+        "value": "29"
+      }
+    ],
+    "sparql": {
+      "title": "SPARQL endpoint",
+      "description": "",
+      "access_url": "http://ldf.fi/ww1lod/sparql",
+      "status": "active"
+    }
+  },
+  {
+    "id": "yale-center-for-british-art",
+    "title": "Yale Center for British Art",
+    "description": "Welcome to the Yale Center for British Art's Linked Open Data service: http://britishart.yale.edu/collections/using-collections/technology/linked-open-data\r\n\r\nThis service provides machine readable access to the Center’s collections data. The data in the Linked Open Data service is expressed in RDF to allow our data set to link to other data sets without the need for database integration. We have organized our data using the CIDOC CRM (Conceptual Reference Model). The CRM is a powerful and robust ontology that represents our data set granularly to permit semantic integration with other data sets. This resource exists to support scholarly and creative activities, and to facilitate interdisciplinary projects. The data, and sample SPARQL queries, are available through our SPARQL end point: http://collection.britishart.yale.edu/sparql/ When accessing or using of the Center's data and services, please be mindful that they are subject to the Center's Open Data And Data Services Terms of Use: http://britishart.yale.edu/open-data-and-data-services-terms-use A description of our internal architecture is available here: http://britishart.yale.edu/collections/using-collections/technology/in-depth Browse examples of our data using Pubby: http://collection.britishart.yale.edu/id/page/object/499\r\n\r\nRelated projects: http://www.researchspace.org/, http://collection.britishmuseum.org/, and http://www.cidoc-crm.org/ ",
+    "website": null,
+    "triples": "0",
+    "keywords": [
+      "culturalheritage",
+      "linked data",
+      "museum",
+      "no-licence-metadata",
+      "sparql",
+      "sparql-endpoint"
+    ],
+    "links": [],
+    "sparql": {
+      "title": "YCBA SPARQL endpoint",
+      "description": "http://britishart.yale.edu/collections/using-collections/technology/linked-open-data",
+      "access_url": "http://collection.britishart.yale.edu/sparql/",
+      "status": "active"
+    }
+  }
+]
