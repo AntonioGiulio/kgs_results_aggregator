@@ -1,11 +1,7 @@
 const lodcloud_querier = require('lodcloud-querier');
 const datahub_querier = require('datahub-querier');
-const parallel = require('run-parallel');
 const graphBuilder = require('ngraph.graph');
 const fs = require('fs');
-
-//lc_querier = new lodcloud_querier();
-//dh_querier = new datahub_querier();
 
 class KGs_Results_Aggregator {
     
@@ -19,49 +15,80 @@ class KGs_Results_Aggregator {
     //PARALLEL
     brutalSearch(target){
 
-        parallel([
-            (callback) => {callback(null, this.lc_querier.brutalSearch(target, arguments[1]))},
-            (callback) => {callback(null, this.dh_querier.brutalSearch(target, arguments[1]))}
-          ],
-          function (err, results) {
-            var lc_results = results[0];
-            var dh_results = results[1];
+        var lc_results = lcToStandard(this.lc_querier.brutalSearch(target, arguments[1]));
+        var dh_results = dhToStandard(this.dh_querier.brutalSearch(target, arguments[1]));
 
-            var mergedResults = JSON.parse('[]');
-            var i = 0;
+        var mergedResults = JSON.parse('[]');
+        var i = 0;
+        
+        //adesso dobbiamo mergiarli in maniera che non ci siano doppi
+        
+        //creo un grafo con gli id dei risultati da DataHub
+        var dh_graph = graphBuilder();
+        for(var kg in dh_results){
+            dh_graph.addNode(dh_results[kg]['id']);
+        }
+        
+        /*
+        //stampiamo tutti i nodi 
+        dh_graph.forEachNode(function(node){
+            console.log(node.id);
+        });*/
 
-            var dh_graph = graphBuilder();
-            for(var kg in dh_results){
-                dh_graph.addNode(dh_results[kg]['name']);
+        //inizia la fase di confronto vera e propria
+        for(var kg in lc_results){
+            //se nell'insieme dei risultati di dh non è presente il risultato corrente di lod cloud lo aggiungo ai risultati finali, tutti gli altri saranno già parte dei risultati di DataHub
+            if(dh_graph.getNode(lc_results[kg]['id']) == null){
+                mergedResults[i++] = lc_results[kg];
             }
-            
-            /*
-            //stampiamo tutti i nodi 
-            dh_graph.forEachNode(function(node){
-                console.log(node.id);
-            });*/
+        }
 
-            //inizia la fase di confronto vera e propria
-            for(var kg in lc_results){
-                //se nell'insieme dei risultati di dh non è presente il risultato corrente di lod cloud stampo
-                if(dh_graph.getNode(lc_results[kg]['_id']) == null){
-                    mergedResults[i++] = lc_results[kg];
-                    console.log('ho aggiunto ai risultati: ' + lc_results[kg]['_id']);
-                }
+        //aggiungo anche tutti i risultati di dh hub;
+        for(var kg in dh_results){
+            mergedResults[i++] = dh_results[kg];
+        }      
+        
+        /*
+        //temporaneo per analizzare i risultati, andrà eliminato 
+        fs.writeFile("first_approach.json", JSON.stringify(mergedResults, null, 2), function(err) {
+            if(err) {
+                return console.log(err);
             }
+            console.log("The file was saved!");
+        }); 
+        */
 
-            //aggiungo anche tutti i risultati di dh hub;
-            for(var kg in dh_results){
-                mergedResults[i++] = dh_results[kg];
-            }            
-            fs.writeFile("first_approach.json", JSON.stringify(mergedResults, null, 2), function(err) {
-              if(err) {
-                  return console.log(err);
-              }
-              console.log("The file was saved!");
-            }); 
-            return mergedResults;
-          })
+
+        // @@@@@ dobbiamo fare qualcosa riguardo l'ordinamento; che è andato un po' a puttane 
+        return mergedResults;        
+    }
+
+
+    multiTagSearch(target, ...tags){
+        var brutalResults = this.brutalSearch(target);
+        var results = JSON.parse('[]');
+
+        var field, i = 0;
+        const pattern = new RegExp(target, 'i');
+        for(var kg in brutalResults){
+            field = '';
+            for(var j in tags){
+                field += JSON.stringify(brutalResults[kg][tags[j]]);
+            }
+            if(pattern.test(field)){
+                results[i++] = brutalResults[kg];
+            }
+        }
+
+        /*
+        fs.writeFile("multiResults.json", JSON.stringify(results, null, 2), function(err) {
+            if(err) {
+                return console.log(err);
+            }
+            console.log("The file was saved!");
+          }); 
+            */
+        return results;
     }
 
    
@@ -79,7 +106,7 @@ function lcToStandard(datasets) {
         currentItem['triples'] = datasets[ds]['triples'];
         currentItem['keywords'] = datasets[ds]['keywords'];
         currentItem['links'] = datasets[ds]['links'];
-        currentItem['sparql'] = datasets[ds]['sparql'];
+        currentItem['sparql'] = datasets[ds]['sparql'][0];
 
         standardized[i++] = currentItem;
     }
@@ -135,7 +162,7 @@ function dhToStandard(datasets) {
     return standardized;
 }
 
-//const aggregator = new KGs_Results_Aggregator();
-//var t0 = new Date().getTime();
-//aggregator.brutalSearch('.*');
+const aggregator = new KGs_Results_Aggregator();
+
+aggregator.multiTagSearch('museum', 'id');
 
