@@ -1,7 +1,7 @@
 # Knowledge Graphs results aggregator
 
 ## Description 
-E' una classe javascript creata per unire e standardizzare i risultati provenienti da [lodcloud-querier](https://www.npmjs.com/package/lodcloud-querier) e [datahub-querier](https://www.npmjs.com/package/datahub-querier).
+It is a javascript class created to merge and standardize the results coming from [lodcloud-querier](https://www.npmjs.com/package/lodcloud-querier) and [datahub-querier](https://www.npmjs.com/package/datahub-querier).
 
 You can perform a **brutal search** and a **search by tag ang multiple tag**.
 
