@@ -21,6 +21,9 @@ const graphBuilder = require('ngraph.graph');
 const pagerank = require('ngraph.pagerank');
 // npm module required to compute centrality on a graph
 const centrality = require('ngraph.centrality');
+// npm module required to compute weighted pagerank on a graph
+const graph4pagerank = require('pagerank.js');
+
 
 //const fs = require('fs');
 
@@ -123,11 +126,12 @@ class KGs_Results_Aggregator {
                 break;
 
             case 'name':
-                return this.sortResultsByName(results)                ;
+                return this.sortResultsByName(results);
                 break;
 
             case 'authority':
-                return this.sortResultsByAuthority(results)                ;
+                //return this.sortResultsByAuthority(results);
+                return this.sortResultsByAuthority_weighted(results);
                 break;
 
             case 'centrality':
@@ -185,6 +189,24 @@ class KGs_Results_Aggregator {
         return results;
     }
 
+     /*
+    * Summary: Sorts results by authority using the pagerank algorithm
+    * Parameters: results (JSONArray) generated in a previous request.
+    * Return: JSONArray containing the ordered results.
+    */
+    sortResultsByAuthority_weighted(results){
+        console.log('authority ranking');
+        var resultGraph = createGraph(results);
+        var rank = graph4pagerank.rank(0.85, 0.000001, function (node, rank) {
+           resultGraph.removeNode(node);
+           resultGraph.addNode(node, rank);
+        });   
+
+        results.sort(function(a, b) { return resultGraph.getNode(b.id).data - resultGraph.getNode(a.id).data });
+
+        return results;
+    }
+
     /*
     * Summary: Sorts results by centrality using the centrality algorithm
     * Parameters: results (JSONArray) generated in a previous request.
@@ -231,13 +253,14 @@ class KGs_Results_Aggregator {
 function createGraph(raw){
     var graph = graphBuilder();
     for(d in raw){
-        graph.addNode(raw[d].id);
+        graph.addNode(raw[d].id, 0);
     }
     for(d in raw){
         var currKGLinks = raw[d].links;
         for(link in currKGLinks){
             if(graph.getNode(currKGLinks[link].target) != null){
-                graph.addLink(raw[d].id, currKGLinks[link].target);
+                graph.addLink(raw[d].id, currKGLinks[link].target); // quì dovrei aggiungere il peso ai nodi
+                graph4pagerank.link(raw[d].id, currKGLinks[link].target, currKGLinks[link].value) 
             }
         }
     }
