@@ -202,6 +202,11 @@ class KGs_Results_Aggregator {
            resultGraph.addNode(node, rank);
         });   
 
+        //we have to apply the rank value in the results json
+        for(var kg in results){
+            results[kg]['pakerank'] = resultGraph.getNode(results[kg].id).data;
+        }
+
         results.sort(function(a, b) { return resultGraph.getNode(b.id).data - resultGraph.getNode(a.id).data });
 
         return results;
@@ -259,7 +264,7 @@ function createGraph(raw){
         var currKGLinks = raw[d].links;
         for(link in currKGLinks){
             if(graph.getNode(currKGLinks[link].target) != null){
-                graph.addLink(raw[d].id, currKGLinks[link].target); // quì dovrei aggiungere il peso ai nodi
+                graph.addLink(raw[d].id, currKGLinks[link].target); 
                 graph4pagerank.link(raw[d].id, currKGLinks[link].target, currKGLinks[link].value) 
             }
         }
@@ -281,6 +286,7 @@ function lcToStandard(datasets) {
         currentItem['keywords'] = datasets[ds]['keywords'];
         currentItem['links'] = datasets[ds]['links'];
         currentItem['sparql'] = datasets[ds]['sparql'][0];
+        currentItem['pagerank'] = '0';
 
         standardized[i++] = currentItem;
     }
@@ -330,6 +336,7 @@ function dhToStandard(datasets) {
                 currentItem['sparql'] = sparqlEnd;
             }            
         }
+        currentItem['pagerank'] = '0';
 
         standardized[i++] = currentItem;
     }
