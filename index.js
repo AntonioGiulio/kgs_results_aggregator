@@ -87,7 +87,7 @@ class KGs_Results_Aggregator {
     * Return: JSONArray containing the ordered, standardized & merged results.
     */
     multiTagSearch(target, ...tags){
-        var brutalResults = this.brutalSearch(target, arguments[arguments.length-1]);
+        var brutalResults = this.brutalSearch(target);
         var results = JSON.parse('[]');
 
         var field, i = 0;
@@ -110,7 +110,7 @@ class KGs_Results_Aggregator {
             console.log("The file was saved!");
           }); */
             
-        return results;
+        return this.generalSorting(results, arguments[arguments.length-1]);
     }
 
 
@@ -197,7 +197,8 @@ class KGs_Results_Aggregator {
     sortResultsByAuthority_weighted(results){
         console.log('authority ranking');
         var resultGraph = createGraph(results);
-        var rank = graph4pagerank.rank(0.85, 0.000001, function (node, rank) {
+        graph4pagerank.rank(0.85, 0.000001, function (node, rank) {
+        console.log(node + "\t---->\t" + rank);
            resultGraph.removeNode(node);
            resultGraph.addNode(node, rank);
         });   
