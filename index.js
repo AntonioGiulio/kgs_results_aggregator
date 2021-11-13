@@ -258,6 +258,7 @@ class KGs_Results_Aggregator {
 */
 function createGraph(raw){
     var graph = graphBuilder();
+    graph4pagerank.reset();
     for(d in raw){
         graph.addNode(raw[d].id, 0);
     }
