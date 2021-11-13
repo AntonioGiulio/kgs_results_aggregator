@@ -204,7 +204,7 @@ class KGs_Results_Aggregator {
 
         //we have to apply the rank value in the results json
         for(var kg in results){
-            results[kg]['pakerank'] = resultGraph.getNode(results[kg].id).data;
+            results[kg]['pagerank'] = resultGraph.getNode(results[kg].id).data;
         }
 
         results.sort(function(a, b) { return resultGraph.getNode(b.id).data - resultGraph.getNode(a.id).data });

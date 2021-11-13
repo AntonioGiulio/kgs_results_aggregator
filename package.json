@@ -1,7 +1,7 @@
 {
   "main": "index.js",
   "name": "kgs_results_aggregator",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "homepage": "https://github.com/AntonioGiulio/kgs_results_aggregator",
   "dependencies": {
     "datahub-querier": "^0.1.3",
